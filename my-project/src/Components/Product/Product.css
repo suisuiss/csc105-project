@@ -1,0 +1,134 @@
+#product1{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: -15.5cm;
+    border-radius: 15px;
+}
+#product2{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: -9.5cm;
+    border-radius: 15px;
+}
+#product3{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: -3.5cm;
+    border-radius: 15px;
+}
+#product4{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 2.5cm;
+    border-radius: 15px;
+}
+#product5{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 8.5cm;
+    border-radius: 15px;
+}
+#product6{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 14.5cm;
+    border-radius: 15px;
+}
+#product7{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 20.5cm;
+    border-radius: 15px;
+}
+#product8{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 26.5cm;
+    border-radius: 15px;
+}
+#product9{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 32.5cm;
+    border-radius: 15px;
+}
+#product10{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: 38.5cm;
+    border-radius: 15px;
+}
+
+#recommend{
+    position: absolute;
+    margin-top: -17cm;
+    margin-left: 9.2cm;
+}
+
+.menClothes{
+   text-decoration: none;
+   position: absolute;
+   margin-top: 2cm;
+   margin-left: 0.5cm; 
+}
+.womenClothes{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 3cm;
+    margin-left: 0.5cm; 
+ }
+ .accessories{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 4cm;
+    margin-left: 0.5cm; 
+ }
+ .electronic{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 5cm;
+    margin-left: 0.5cm; 
+ }
+ .snack{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 6cm;
+    margin-left: 0.5cm; 
+ }
+
+
+ .category>h2{
+     position: absolute;
+     margin-top: 0.8cm;
+    margin-left: 0.5cm; 
+ }

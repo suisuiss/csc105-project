@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import App from './App';
-import { BrowserRouter, Router,Route, Link } from "react-router-dom";
-import {browserHistory} from 'react-router';
-import ReactDOM ,{render} from 'react-dom';
+import { BrowserRouter} from "react-router-dom";
+
+import ReactDOM  from 'react-dom';
 
 
 

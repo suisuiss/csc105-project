@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LogIn from './Components/LogIn/LogIn';
 import Shop from './Components/Shop/Shop';
 import SignUp from './Components/SignUp/SignUp';
-import {BrowserRouter,Route,Link,Router,Redirect} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 class App extends Component {
   render(){
   return (
