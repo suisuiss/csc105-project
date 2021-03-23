@@ -23,7 +23,7 @@ const Shop = () => {
 
       <div className="category">
         <h2>Your Options</h2>
-        <a className="menClothes" href="">Men Clothes</a>
+        <a className="menClothes" href="./Menclothes/Menclothes.js">Men Clothes</a>
         <a className="womenClothes" href="">Women Clothes</a>
         <a className="accessories" href="">Accessories</a>
         <a className="electronic" href="">Electronic</a>
