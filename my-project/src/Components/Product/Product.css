@@ -22,14 +22,14 @@
     margin-left: 6cm;
 }
 
-#product1>#details{
+#product1>#details1{
     text-decoration: none;
     position: absolute;
     margin-left: 6cm;
     margin-top: 0.2cm;
     
 }
-#product1>#cart{
+#product1>#cart1{
     text-decoration: none;
     position: absolute;
     margin-left: 24.5cm;
@@ -39,6 +39,11 @@
     border-radius:10px;
     
 }
+
+
+
+
+
 #product2{
     width: 30cm;
     height: 5cm;
@@ -48,6 +53,44 @@
     margin-top: -9.5cm;
     border-radius: 15px;
 }
+#product2>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product2>h1{
+   
+    margin-left: 6cm;
+}
+#product2>p{
+    margin-left: 6cm;
+}
+
+#product2>#details2{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product2>#cart2{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
+
+
+
+
 #product3{
     width: 30cm;
     height: 5cm;
@@ -57,6 +100,43 @@
     margin-top: -3.5cm;
     border-radius: 15px;
 }
+#product3>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product3>h1{
+   
+    margin-left: 6cm;
+}
+#product3>p{
+    margin-left: 6cm;
+}
+
+#product3>#details3{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product3>#cart3{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
+
+
+
 #product4{
     width: 30cm;
     height: 5cm;
@@ -66,6 +146,42 @@
     margin-top: 2.5cm;
     border-radius: 15px;
 }
+#product4>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product4>h1{
+   
+    margin-left: 6cm;
+}
+#product4>p{
+    margin-left: 6cm;
+}
+
+#product4>#details4{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product4>#cart4{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
+
+
 #product5{
     width: 30cm;
     height: 5cm;
@@ -75,6 +191,42 @@
     margin-top: 8.5cm;
     border-radius: 15px;
 }
+#product5>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product5>h1{
+   
+    margin-left: 6cm;
+}
+#product5>p{
+    margin-left: 6cm;
+}
+
+#product5>#details5{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product5>#cart5{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
+
+
 #product6{
     width: 30cm;
     height: 5cm;
@@ -84,6 +236,41 @@
     margin-top: 14.5cm;
     border-radius: 15px;
 }
+#product6>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product6>h1{
+   
+    margin-left: 6cm;
+}
+#product6>p{
+    margin-left: 6cm;
+}
+
+#product6>#details6{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product6>#cart6{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
+
 #product7{
     width: 30cm;
     height: 5cm;
@@ -93,6 +280,40 @@
     margin-top: 20.5cm;
     border-radius: 15px;
 }
+#product7>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product7>h1{
+   
+    margin-left: 6cm;
+}
+#product7>p{
+    margin-left: 6cm;
+}
+
+#product7>#details7{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product7>#cart7{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
 #product8{
     width: 30cm;
     height: 5cm;
@@ -102,6 +323,41 @@
     margin-top: 26.5cm;
     border-radius: 15px;
 }
+#product8>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product8>h1{
+   
+    margin-left: 6cm;
+}
+#product8>p{
+    margin-left: 6cm;
+}
+
+#product8>#details8{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product8>#cart8{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
+
+
+
 #product9{
     width: 30cm;
     height: 5cm;
@@ -111,6 +367,38 @@
     margin-top: 32.5cm;
     border-radius: 15px;
 }
+#product9>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product9>h1{
+   
+    margin-left: 6cm;
+}
+#product9>p{
+    margin-left: 6cm;
+}
+
+#product9>#details9{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product9>#cart9{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
 #product10{
     width: 30cm;
     height: 5cm;
@@ -119,6 +407,38 @@
     margin-left: 9.2cm;
     margin-top: 38.5cm;
     border-radius: 15px;
+}
+#product10>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product10>h1{
+   
+    margin-left: 6cm;
+}
+#product10>p{
+    margin-left: 6cm;
+}
+
+#product10>#details10{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product10>#cart10{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
 }
 
 #recommend{
