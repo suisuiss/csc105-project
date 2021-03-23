@@ -1,0 +1,99 @@
+html{
+    background-color:rgb(255,160,122);
+}
+.llogo{
+    width: 8cm;
+    height: 1cm; 
+    text-align: center;
+    margin-top: -0.5cm;
+    margin-left: -0.2cm;
+
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding-bottom: 1.5cm;
+    
+}
+a>p{
+    font-size: 12px;
+    position: fixed;
+    margin-top: -0.6cm;
+    margin-left: 2.25cm;
+    font-weight: normal;
+    
+}
+.dailydeal{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.search{
+    display: inline-block;
+    position: fixed;
+   margin-top: -0.22cm;
+   margin-left: 0.2cm;
+    
+}
+input{
+    width: 20cm;
+    height: 1.6cm;
+    background-color: blanchedalmond;
+    border: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0.5cm;
+}
+.option{
+    position: absolute;
+    margin-left: 8cm;
+   margin-top: -0.7cm;
+   
+    
+}
+select{
+    width: 20cm;
+    height: 0.7cm;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0.5cm;
+}
+.ads{
+    width: 8cm;
+    height: 8cm;
+    background-color: rgb(255,173,141);
+}
+.news{
+    width: 8cm;
+    height: 9.52cm;
+    background-color: rgb(246,155,135);
+    
+}
+
+img[name=cart]{
+    position: absolute;
+    margin-left: 29cm;
+    margin-top: -19.3cm;
+    width: 1.5cm;
+    height: 1.5cm;
+}
+img[name=bell]{
+    position: absolute;
+    margin-left: 32.3cm;
+    margin-top: -19cm;
+    width: 0.8cm;
+    height: 1cm;
+}
+img[name=setting]{
+    position: absolute;
+    margin-left: 35cm;
+    margin-top: -19cm;
+    width: 1cm;
+    height: 1cm;
+}
+img[name=user]{
+    position: absolute;
+    margin-left: 38cm;
+    margin-top: -19cm;
+    width: 1cm;
+    height: 1cm;
+}
