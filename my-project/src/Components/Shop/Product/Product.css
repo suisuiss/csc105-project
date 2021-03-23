@@ -1,0 +1,9 @@
+#product{
+    width: 30cm;
+    height: 5cm;
+    background-color: rgb(255,173,141);
+    position:absolute;
+    margin-left: 9.2cm;
+    margin-top: -17cm;
+    border-radius: 15px;
+}
