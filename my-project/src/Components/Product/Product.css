@@ -7,6 +7,38 @@
     margin-top: -15.5cm;
     border-radius: 15px;
 }
+#product1>img{
+    width: 3cm;
+    height: 4cm;
+    position: absolute;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+}
+#product1>h1{
+   
+    margin-left: 6cm;
+}
+#product1>p{
+    margin-left: 6cm;
+}
+
+#product1>#details{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 6cm;
+    margin-top: 0.2cm;
+    
+}
+#product1>#cart{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 24.5cm;
+    margin-top: -1cm;
+    background-color: blanchedalmond;
+    padding: 0.2cm;
+    border-radius:10px;
+    
+}
 #product2{
     width: 30cm;
     height: 5cm;
@@ -132,3 +164,4 @@
      margin-top: 0.8cm;
     margin-left: 0.5cm; 
  }
+ 
