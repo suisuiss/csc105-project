@@ -18,14 +18,14 @@ const Shop = () => {
         </a>
       </div>
       <div className="search">
-        <input type="search" placeholder="What you want to get?" />
+        <input type="search" placeholder="What do you want to get?" />
       </div>
 
       <div className="category">
         <h2>Your Options</h2>
         <a className="menClothes" href="./Menclothes/Menclothes.js">Men Clothes</a>
-        <a className="womenClothes" href="">Women Clothes</a>
-        <a className="accessories" href="">Accessories</a>
+        <a className="womenClothes" href="./WomenClothes/WomenClothes.js">Women Clothes</a>
+        <a className="accessories" href="./Accessories/Accessories.js">Accessories</a>
         <a className="electronic" href="">Electronic</a>
         <a className="snack" href="">Snack</a>
 

@@ -20,58 +20,58 @@ export const Menclothes = () => {
             <a href="" id="cart2">Add To Shopping Cart</a>
         </div>
         <div id="menclothes3">
-        <img src="https://cdn-img.prettylittlething.com/d/8/4/e/d84e609962c532e472cc8f460b28d5640869a12c_CLU4305_3.JPG"></img>
-            <h1>569 Baht</h1>
-            <p>SHAPE BURGUNDY SATIN WRAP DRESS</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51Smwj8WHzL._AC_UX385_.jpg"></img>
+            <h1>1260 Baht</h1>
+            <p>Men's Wool Jacket Warm Trench Long Outwear Overcoat Coats</p>
             <a href="" id="details3">see more details</a>
             <a href="" id="cart3">Add To Shopping Cart</a>
         </div>
         <div id="menclothes4">
-        <img src="https://i.pinimg.com/originals/f6/cc/c5/f6ccc530b293cadf83151d653a77b730.jpg"></img>
-            <h1>399 Baht</h1>
-            <p>Women High Neck Sleeveless Blouse</p>
+        <img src="https://sc04.alicdn.com/kf/Ud63e8420e6864de1abfc39797ecefe8bD.jpg"></img>
+            <h1>429 Baht</h1>
+            <p>men hoodie stylish men's clothing men's hoodies, custom color plain hoodies</p>
             <a href="" id="details4">see more details</a>
             <a href="" id="cart4">Add To Shopping Cart</a>
         </div>
         <div id="menclothes5">
-        <img src="https://www.haglofs.com/dw/image/v2/BBTN_PRD/on/demandware.static/-/Sites-master-catalog-haglofs/default/dw2674d8dc/hi-res/6043062C5_S20_2_grey.jpg?sw=350&sh=350&sm=fit"></img>
-            <h1>239 Baht</h1>
-            <p>A sun hat with a brim - perfect for protection from a number of adverse weather conditions.</p>
+        <img src="https://flexrage.com/wp-content/uploads/2020/01/5054924026733.jpg"></img>
+            <h1>800 Baht</h1>
+            <p>Flexrage T Shirt</p>
             <a href="" id="details5">see more details</a>
             <a href="" id="cart5">Add To Shopping Cart</a>
         </div>
         <div id="menclothes6">
-        <img src="https://static.zara.net/photos///2020/I/1/1/p/1202/610/050/2/w/1920/1202610050_1_1_1.jpg?ts=1597059771480"></img>
-            <h1>299 Baht</h1>
-            <p>ASYMMETRIC LEATHER HIGH-HEEL SHOES </p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51cKBG%2BwllL._AC_UL1050_.jpg"></img>
+            <h1>389 Baht</h1>
+            <p>Men's Short Sleeve Oxford Button Down Casual Shirt</p>
             <a href="" id="details6">see more details</a>
             <a href="" id="cart6">Add To Shopping Cart</a>
         </div>
         <div id="menclothes7">
-        <img src="https://th-test-11.slatic.net/p/2/yg300-mini-projector-by-mastersat-led-projector-usbsdavhdmi-6107-64100005-6f47290c035c6bdf1b83e95bad35d740-catalog.jpg_720x720q80.jpg_.webp"></img>
-            <h1>1590 Baht</h1>
-            <p>Mini Projector By Mastersat </p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51aTyTKKw%2BL._AC_UX385_.jpg"></img>
+            <h1>789 Baht</h1>
+            <p>Summer Shorts Men Cotton Knee Length Chinos Shorts Vintage Casual Men Shorts Fashion</p>
             <a href="" id="details7">see more details</a>
             <a href="" id="cart7">Add To Shopping Cart</a>
         </div>
         <div id="menclothes8">
-        <img src="https://cdn.alza.co.uk/ImgW.ashx?fd=f3&cd=TP820g"></img>
-            <h1>1899 Baht</h1>
-            <p>TP-LINK Tapo C100 Home Security Wi-Fi Camera 1080P</p>
+        <img src="https://i.pinimg.com/originals/83/ea/f5/83eaf5e02a8ca142c904b345b1f9656f.jpg"></img>
+            <h1>1299 Baht</h1>
+            <p>NEW CARROT FIT JEANS | Denim jeans men, Blue jeans</p>
             <a href="" id="details8">see more details</a>
             <a href="" id="cart8">Add To Shopping Cart</a>
         </div>
         <div id="menclothes9">
-        <img src="https://celebratingsweets.com/wp-content/uploads/2014/08/Chocolate-Cookies-3.jpg"></img>
-            <h1>99 Baht</h1>
-            <p>Soft and chewy Chocolate Cookies loaded with three kinds of chocolate</p>
+        <img src="https://cdn.shopify.com/s/files/1/0210/9734/products/nayked-apparel-men-men-s-ridiculously-soft-long-sleeve-100-cotton-t-shirt-small-heather-grey-na0136-30589738375_1178x1390_crop_center.jpg?v=1607373961"></img>
+            <h1>800 Baht</h1>
+            <p>MEN'S RIDICULOUSLY SOFT LONG SLEEVE 100% COTTON T-SHIRT</p>
             <a href="" id="details9">see more details</a>
             <a href="" id="cart9">Add To Shopping Cart</a>
         </div>
         <div id="menclothes10">
-        <img src="https://www.aimeemars.com/wp-content/uploads/2020/07/IMG_0727.jpg"></img>
-            <h1>99 Baht</h1>
-            <p>Healthy Dark Chocolate Bark</p>
+        <img src="https://cdn.inksoft.com/images/products/756/products/2200/Royal/front/500.png"></img>
+            <h1>179 Baht</h1>
+            <p>Gildan Ultra Cotton Tank Top</p>
             <a href="" id="details10">see more details</a>
             <a href="" id="cart10">Add To Shopping Cart</a>
         </div>
