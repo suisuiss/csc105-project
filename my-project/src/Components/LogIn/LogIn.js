@@ -13,7 +13,7 @@ function LogIn() {
                 <p>Log In</p>
                 <input type="text" name="username" placeholder="Email address or phone number" required />
                 <input type="password" name="password" placeholder="Password" required />
-            <a href="facebook.com"><input type="submit" Value="Log In" name="login" /></a>
+            <a href="../Shop/Shop.js"><input type="submit" Value="Log In" name="login" /></a>
             </div>
             <a href="../SignUp/SignUp.js"><input type="submit" Value="Create New Account" name="signup" /></a>
         </div>

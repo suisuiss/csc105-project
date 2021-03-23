@@ -18,7 +18,7 @@ const SignUp=()=> {
           <input type="text" placeholder="Phone No." name="phone" required />
           <input type="password" placeholder="Password" name="passwordd" required />
           <input type="password" placeholder="Confirm - Password" name="ppassword" required />
-          <a href="./"><input type="submit" defaultValue="Sign Up" /></a>
+          <a href="../Shop/Shop.js"><input type="submit" defaultValue="Sign Up" /></a>
         </div>
       </div>
     );

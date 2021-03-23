@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import LogIn from './Components/LogIn/LogIn';
 import Shop from './Components/Shop/Shop';
 import SignUp from './Components/SignUp/SignUp';
-
-function App() {
-  
+import {BrowserRouter,Route,Link,Router,Redirect} from 'react-router-dom';
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      
-    <SignUp/>
+    <div>
+    <Route exact path ="/" component ={LogIn}/>
+    <Route path ='/shop' component = {Shop}/> 
+    <Route path ='/signup' component = {SignUp}/>
       
     </div>
   );
 }
-
+}
 export default App;
