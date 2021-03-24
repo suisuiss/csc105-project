@@ -26,8 +26,8 @@ const Shop = () => {
         <a className="menClothes" href="./Menclothes/Menclothes.js">Men Clothes</a>
         <a className="womenClothes" href="./WomenClothes/WomenClothes.js">Women Clothes</a>
         <a className="accessories" href="./Accessories/Accessories.js">Accessories</a>
-        <a className="electronic" href="">Electronic</a>
-        <a className="snack" href="">Snack</a>
+        <a className="electronic" href="./Gadgets/Gadgets.js">Gadgets</a>
+        <a className="snack" href="./Snacks/Snacks.js">Snack</a>
 
 
 
