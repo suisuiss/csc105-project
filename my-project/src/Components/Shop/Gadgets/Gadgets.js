@@ -67,7 +67,7 @@ export const Gadgets = () => {
                 <a href="" id="details9">see more details</a>
                 <a href="" id="cart9">Add To Shopping Cart</a>
             </div>
-            <div id="menclothes10">
+            <div id="gadgets10">
                 <img src="https://i.ebayimg.com/images/g/gaoAAOSwg5tc9uZ1/s-l640.jpg"></img>
                 <h1>49383 Baht</h1>
                 <p>iRobot Roomba s9+ (9550) Robot Vacuum with Automatic Dirt Disposal- Wi-Fi Connect</p>
