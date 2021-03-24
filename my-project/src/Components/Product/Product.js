@@ -20,7 +20,7 @@ const products = [
   {
     id: "product3",
     image:
-      "https://cdn-img.prettylittlething.com/d/8/4/e/d84e609962c532e472cc8f460b28d5640869a12c_CLU4305_3.JPG",
+      "https://i.pinimg.com/474x/70/95/2d/70952d739195b005bf1435b2c9fc57c2.jpg",
     price: "569",
     description: "SHAPE BURGUNDY SATIN WRAP DRESS",
   },
