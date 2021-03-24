@@ -113,7 +113,7 @@ export const Accessories = () => {
           Add To Shopping Cart
         </a>
       </div>
-      <div id="menclothes10">
+      <div id="accessories10">
         <img src="https://rukminim1.flixcart.com/image/880/1056/k0plpjk0/shoe/8/a/t/8908723-42-roadster-navy-blue-original-imafk9wchnsnfggp.jpeg?q=50"></img>
         <h1>2199 Baht</h1>
         <p>ROADSTER Sneakers For Men (Navy)</p>
