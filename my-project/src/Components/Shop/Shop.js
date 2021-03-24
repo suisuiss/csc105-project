@@ -10,17 +10,17 @@ const notifications = [
   {
     image:
       "https://dj7u9rvtp3yka.cloudfront.net/products/PIM-1546095976599-a1785a3b-a36a-491d-afe9-ad631d366262_v1-small.jpg",
-    description: "Menclothes Sale of 50%",
+    description: "Menclothes Sale of 50% (April Deal)",
   },
   {
     image:
       "https://www.haglofs.com/dw/image/v2/BBTN_PRD/on/demandware.static/-/Sites-master-catalog-haglofs/default/dw2674d8dc/hi-res/6043062C5_S20_2_grey.jpg?sw=350&sh=350&sm=fit",
-    description: "Accessories Sale of 10%",
+    description: "Accessories Sale of 10% (April Deal)",
   },
   {
     image:
       "https://static.zara.net/photos///2020/I/1/1/p/1202/610/050/2/w/1920/1202610050_1_1_1.jpg?ts=1597059771480",
-    description: "Louboutin Buy 1 get 1 Free!",
+    description: "Louboutin Buy 1 get 1 Free! (April Deal)",
   },
 ];
 
