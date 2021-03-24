@@ -5,6 +5,7 @@ import shopcart from "./shop cart.png";
 import setting from "./setting.png";
 import user from "./user.png";
 import { Product } from "../Product/Product";
+import { Redirect } from "react-router-dom";
 
 const notifications = [
   {
@@ -60,8 +61,11 @@ const NotificationItem = ({ image, description }, index) => {
   );
 };
 
-const Shop = () => {
+const Shop = (props) => {
+  const { cart, setToCart } = props;
+  // const cart = JSON.parse(localStorage.getItem("cart"));
   const [isShowNotification, setIsShowNotification] = useState(false);
+
   return (
     <div className="container">
       <div className="header">
@@ -74,9 +78,16 @@ const Shop = () => {
             <input type="search" placeholder="What do you want to get?" />
           </div>
           <div className="button-container">
-            <a href=".html">
-              <img src={shopcart} alt="Shop Cart" name="cart" />
-            </a>
+            <div className="cart-container">
+              <a href="/cart">
+                <img src={shopcart} alt="Shop Cart" name="cart" />
+              </a>
+              {cart.length === 0 ? (
+                <div></div>
+              ) : (
+                <div className="count-cart-item">{cart.length}</div>
+              )}
+            </div>
             <div className="bell-container">
               <img
                 src={bell}
@@ -101,25 +112,25 @@ const Shop = () => {
         <div className="categories">
           <h2>Your Options</h2>
           <div className="cat-list">
-            <a className="" href="./Menclothes/Menclothes.js">
+            <a className="" href="./menclothes">
               Men Clothes
             </a>
-            <a className="" href="./WomenClothes/WomenClothes.js">
+            <a className="" href="./womenclothes">
               Women Clothes
             </a>
-            <a className="" href="./Accessories/Accessories.js">
+            <a className="" href="./accessories">
               Accessories
             </a>
-            <a className="" href="./Gadgets/Gadgets.js">
+            <a className="" href="./gadgets">
               Gadgets
             </a>
-            <a className="" href="./Snacks/Snacks.js">
+            <a className="" href="./snacks">
               Snack
             </a>
           </div>
         </div>
         <div style={{ flex: "1" }}>
-          <Product />
+          <Product setToCart={setToCart} />
         </div>
       </div>
     </div>

@@ -4,25 +4,29 @@ import snacks from "../../../Snack.json";
 
 const SnacksItem = ({ id, image, price, description }) => {
   return (
-    <div key={id} id={id}>
+    <div key={id} id={id} className="snack-page-item">
       <img src={image}></img>
-      <h1>{price} Baht</h1>
-      <p>{description}</p>
-      <a href="" id={id}>
-        see more details
-      </a>
-      <a href="" id={id}>
-        Add To Shopping Cart
-      </a>
+      <div className="snack-page-item-detail">
+        <h1>{price} Baht</h1>
+        <pre>{description}</pre>
+        <a href={`/details/${id}`} id={id}>
+          see more details
+        </a>
+      </div>
+      <div className="snack-page-button-container">
+        <div className="wrap-snack-page-button-container">
+          <button>Add To Shopping Cart</button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export const Snacks= () => {
+export const Snacks = () => {
   return (
-    <div>
-      <h1 id="snacks">Accessories</h1>
+    <div style={{ width: "85%", margin: "auto" }}>
+      <h1 id="snacks">Snacks</h1>
       {snacks.map((a) => SnacksItem(a))}
     </div>
   );
-}
+};

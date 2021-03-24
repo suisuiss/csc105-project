@@ -100,7 +100,23 @@ html {
   width: 2rem;
 }
 
-.container > .header > div > .button-container > a > img[name="cart"] {
+.cart-container {
+  position: relative;
+}
+
+.count-cart-item {
+  position: absolute;
+  background-color: red;
+  border-radius: 100%;
+  padding: 2px 6px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  top: 0;
+  right: 0;
+}
+
+.container > .header > div > .button-container > div > a > img[name="cart"] {
   width: 3rem;
 }
 

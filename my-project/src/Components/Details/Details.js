@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import products from "../../Products.json";
 
+
 const Details = () => {
   const { id } = useParams();
   const selected = products.filter((p) => p.id == id)[0];
@@ -18,12 +19,12 @@ const Details = () => {
 };
 
 const DetailsItem = ({ product }) => {
-  const { id, image, price, description} = product;
+  const { name,id, image, price, description} = product;
 
   return (
     <div>
       <img src={image} />
-      
+      <span style={{ display: "block" }}>{name} </span>
       <span style={{ display: "block" }}>Price: {price} Baht</span>
       <p>Description: {description}</p>
       <span style={{ display: "block" }}>ID: {id}</span>

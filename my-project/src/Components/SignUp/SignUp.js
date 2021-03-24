@@ -27,7 +27,7 @@ const SignUp = () => {
           name="ppassword"
           required
         />
-        <a href="../Shop/Shop.js">
+        <a href="/shop">
           <input type="submit" defaultValue="Sign Up" />
         </a>
       </div>
