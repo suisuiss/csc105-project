@@ -3,7 +3,7 @@ import "./logIn.css";
 
 function LogIn() {
   return (
-    <div className="container">
+    <div className="login-container">
       <div className="details">
         <div className="wrap-details">
           <h1>Daily Deal</h1>

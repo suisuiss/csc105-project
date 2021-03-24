@@ -3,17 +3,17 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
+.login-container {
   display: flex;
   width: 75%;
   margin: 12rem auto;
 }
 
-.container > .details {
+.login-container > .details {
   flex: 1;
 }
 
-.container > .details > .wrap-details {
+.login-container > .details > .wrap-details {
   display: inline-block;
 }
 
@@ -46,9 +46,12 @@ html {
 
 .login-box > input {
   width: 75%;
+  height: 2rem;
   padding: 0;
   margin: 0.5rem 0;
   align-self: center;
+  background-color: rgb(255, 235, 205);
+  border: 0;
 }
 
 .login-box > .button-container {
