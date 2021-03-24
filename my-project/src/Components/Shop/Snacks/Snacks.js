@@ -69,7 +69,7 @@ export const Snacks = () => {
                 <a href="" id="details9">see more details</a>
                 <a href="" id="cart9">Add To Shopping Cart</a>
             </div>
-            <div id="menclothes10">
+            <div id="snacks10">
                 <img src="https://whattocooktoday.com/wp-content/uploads/2019/08/curry-puff-32.jpg"></img>
                 <h1>159 Baht</h1>
                 <p>potato spiral curry puff filled with aromatic potato and chicken filling (10 pieces)</p>
