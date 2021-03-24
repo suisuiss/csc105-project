@@ -3,7 +3,7 @@ import "./logIn.css";
 
 function LogIn() {
   return (
-    <div className="container">
+    <div className="login-container">
       <div className="details">
         <div className="wrap-details">
           <h1>Daily Deal</h1>
@@ -14,23 +14,23 @@ function LogIn() {
         <p>Log In</p>
         <input
           type="text"
-
+          name="username"
           placeholder="Email address or phone number"
           required
         />
         <input
-          type="text"
-
+          type="password"
+          name="password"
           placeholder="Password"
           required
         />
         <div className="button-container">
           <a id="login-button" href="/shop">
             Login
-        </a>
+          </a>
           <a id="signup-button" href="/signup">
             Create New Account
-        </a>
+          </a>
         </div>
       </div>
     </div>

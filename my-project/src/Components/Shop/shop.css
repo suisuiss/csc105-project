@@ -2,97 +2,140 @@ html {
   background-color: rgb(255, 160, 122);
 }
 
-.llogo {
-  width: 8cm;
-  height: 1cm;
-  text-align: center;
-  margin-top: -0.5cm;
-  margin-left: -0.2cm;
-
-  font-family: "Open Sans", sans-serif;
-  display: inline-block;
-  padding-bottom: 1.5cm;
+.container {
+  margin: 1.25rem auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
 }
 
-a > p {
-  font-size: 12px;
-  position: absolute;
-  margin-top: -0.6cm;
-  margin-left: 2.25cm;
-  font-weight: normal;
+.container > .header {
+  display: flex;
 }
 
-.dailydeal {
-  text-decoration: none;
-  color: black;
+.container > .header > .logo {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 14rem;
+}
+
+.container > .header > .logo > h1 {
+  margin: 0;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
 }
 
-.search {
-  display: inline-block;
-  position: absolute;
-  margin-top: 0.4cm;
-  margin-left: 0.2cm;
+.container > .header > .logo > p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
 }
 
-input {
-  width: 20cm;
-  height: 1cm;
+.container > .header > div > .search {
+  flex: 1;
+}
+
+.container > .header > div > .search > input {
+  width: 100%;
+  height: 100%;
   background-color: blanchedalmond;
   border: none;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  padding-left: 0.5cm;
   border-radius: 5px;
+  padding: 0 0.5rem;
 }
 
-.option {
+.container > .header > div > .button-container {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container > .header > div > .button-container > .bell-container {
+  position: relative;
+}
+
+.container
+  > .header
+  > div
+  > .button-container
+  > .bell-container
+  > .notification {
+  background-color: blanchedalmond;
   position: absolute;
-  margin-left: 8cm;
-  margin-top: -0.7cm;
+  top: 120%;
+  left: 50%;
+  width: 12rem;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeIn ease 0.5s;
 }
 
-.category {
-  width: 8cm;
-  height: 8cm;
+.container
+  > .header
+  > div
+  > .button-container
+  > .bell-container
+  > .notification::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent blanchedalmond transparent;
+}
+
+.container > .header > div > .button-container > a > img,
+.container > .header > div > .button-container > div > a > img,
+.container > .header > div > .button-container > .bell-container > img {
+  width: 2rem;
+}
+
+.container > .header > div > .button-container > a > img[name="cart"] {
+  width: 3rem;
+}
+
+.container > .content {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.container > .content > .categories {
+  width: 14rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 173, 141);
   border-radius: 15px;
+  padding: 1.5rem 0;
+}
+.container > .content > .categories > .cat-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
 }
 
-.news {
-  width: 8cm;
-  height: 9.52cm;
+.container > .content > .categories > h2,
+.container > .content > .categories > .cat-list > a {
+  margin: 0;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
 }
 
-img[name="cart"] {
-  position: absolute;
-  margin-left: 29cm;
-  margin-top: -19.3cm;
-  width: 1.5cm;
-  height: 1.5cm;
-}
-
-img[name="bell"] {
-  position: absolute;
-  margin-left: 32.3cm;
-  margin-top: -19cm;
-  width: 0.8cm;
-  height: 1cm;
-}
-
-img[name="setting"] {
-  position: absolute;
-  margin-left: 35cm;
-  margin-top: -19cm;
-  width: 1cm;
-  height: 1cm;
-}
-
-img[name="user"] {
-  position: absolute;
-  margin-left: 38cm;
-  margin-top: -19cm;
-  width: 1cm;
-  height: 1cm;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
