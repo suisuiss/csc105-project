@@ -42,6 +42,7 @@ html {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+<<<<<<< HEAD
 }
 
 .login-box > input {
@@ -54,6 +55,20 @@ html {
   border: 0;
 }
 
+=======
+}
+
+.login-box > input {
+  width: 75%;
+  height: 2rem;
+  padding: 0;
+  margin: 0.5rem 0;
+  align-self: center;
+  background-color: rgb(255, 235, 205);
+  border: 0;
+}
+
+>>>>>>> master
 .login-box > .button-container {
   margin: 1rem 0;
   width: 100%;
@@ -90,4 +105,8 @@ html {
   font-weight: bold;
   align-self: center;
   margin: 0.5rem 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
