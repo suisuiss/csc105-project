@@ -1,0 +1,62 @@
+[
+    {
+        "id": "snacks1",
+        "image": "https://celebratingsweets.com/wp-content/uploads/2014/08/Chocolate-Cookies-3.jpg",
+        "price": "99 Baht",
+        "description": "Soft and chewy Chocolate Cookies loaded with three kinds of chocolate"
+    },
+    {
+        "id": "snacks2",
+        "image": "https://www.aimeemars.com/wp-content/uploads/2020/07/IMG_0727.jpg",
+        "price": "99 Baht",
+        "description": "Healthy Dark Chocolate Bark"
+    },
+    {
+        "id": "snacks3",
+        "image": "https://i.pinimg.com/originals/1f/d2/a5/1fd2a5182fd4abe16cc260dbead8ed93.jpg",
+        "price": "120 Baht",
+        "description": "Banana Flavored Korean Rice Snack from Neo Congjolmi "
+    },
+    {
+        "id": "snacks4",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81WsiF%2B59DL._SL1500_.jpg",
+        "price": "59 Baht",
+        "description": "Roll over image to zoom in Stix – Crispy Corn Snacks – Flavor (Hot Chili Pepper & Lime)"
+    },
+    {
+        "id": "snacks5",
+        "image": "https://i.ebayimg.com/images/g/4BcAAOSwEFheMGVT/s-l300.jpg",
+        "price": "245 Baht",
+        "description": "SUPER RING SNACKS MALAYSIA 60g"
+    },
+    {
+        "id": "snacks6",
+        "image": "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2018/01/img_147257_2.jpg",
+        "price": "139 Baht",
+        "description": "Japan’s delicious “Happy Turn” rice cracker snack gets a new rich yuzukoshō flavour"
+    },
+    {
+        "id": "snacks7",
+        "image": "https://i.pinimg.com/736x/d9/d4/52/d9d452917896a2aecc082d08a29e9209.jpg",
+        "price": "289 Baht",
+        "description": "6 pieces of Sakura French Macarons"
+    },
+    {
+        "id": "snacks8",
+        "image": "https://www.turner-price.com/media/catalog/product/cache/266be06552e40de495ca8a0ecf632bea/d/f/dfc33b4c067e474fbb35faf05c163974.jpg",
+        "price": "250 Baht",
+        "description": "Speciality Breads Scioche Brioche Scone (5 pieces)"
+    },
+    {
+        "id": "snacks9",
+        "image": "https://i2.wp.com/ifyougiveablondeakitchen.com/wp-content/uploads/2014/05/fudgy-chewy-brownies-2020-2.jpg",
+        "price": "270Baht",
+        "description": "Fudgy Brownies 1 box (9 pieces)"
+    },
+    {
+        "id": "snacks10",
+        "image": "https://whattocooktoday.com/wp-content/uploads/2019/08/curry-puff-32.jpg",
+        "price": "159 Baht",
+        "description": "potato spiral curry puff filled with aromatic potato and chicken filling (10 pieces)"
+    }
+]

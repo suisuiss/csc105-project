@@ -27,14 +27,16 @@ const notifications = [
 const NotificationContainer = () => {
   return (
     <div className="notification">
-      {notifications.map((n) => NotificationItem(n))}
+      {notifications.map((n, index) => NotificationItem(n, index))}
     </div>
   );
 };
 
-const NotificationItem = ({ image, description }) => {
+const NotificationItem = ({ image, description }, index) => {
   return (
     <div
+      key={index}
+      id={index}
       style={{
         display: "flex",
         borderBottom: "1px solid black",
