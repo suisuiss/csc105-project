@@ -30,10 +30,10 @@ const Shop = () => {
         <a className="accessories" href="./Accessories/Accessories.js">
           Accessories
         </a>
-        <a className="electronic" href="">
-          Electronic
+        <a className="electronic" href="./Gadgets/Gadgets.js">
+          Gadgets
         </a>
-        <a className="snack" href="">
+        <a className="snack" href="./Snacks/Snacks.js">
           Snack
         </a>
       </div>

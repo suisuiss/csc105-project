@@ -6,6 +6,8 @@ import { Route } from "react-router-dom";
 import { Menclothes } from "./Components/Shop/Menclothes/Menclothes";
 import { Womenclothes } from "./Components/Shop/WomenClothes/WomenClothes";
 import { Accessories } from "./Components/Shop/Accessories/Accessories";
+import { Gadgets } from "./Components/Shop/Gadgets/Gadgets";
+import { Snacks } from "./Components/Shop/Snacks/Snacks";
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
         <Route path="/menclothes" component={Menclothes} />
         <Route path="/womenclothes" component={Womenclothes} />
         <Route path="/accessories" component={Accessories} />
+        <Route path="/gadgets" component={Gadgets} />
+        <Route path="/snacks" component={Snacks} />
       </div>
     );
   }
