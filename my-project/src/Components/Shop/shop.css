@@ -57,8 +57,46 @@ html {
   align-items: center;
 }
 
+.container > .header > div > .button-container > .bell-container {
+  position: relative;
+}
+
+.container
+  > .header
+  > div
+  > .button-container
+  > .bell-container
+  > .notification {
+  background-color: blanchedalmond;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 12rem;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeIn ease 0.5s;
+}
+
+.container
+  > .header
+  > div
+  > .button-container
+  > .bell-container
+  > .notification::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent blanchedalmond transparent;
+}
+
 .container > .header > div > .button-container > a > img,
-.container > .header > div > .button-container > div > a > img {
+.container > .header > div > .button-container > div > a > img,
+.container > .header > div > .button-container > .bell-container > img {
   width: 2rem;
 }
 
@@ -91,4 +129,13 @@ html {
   margin: 0;
   padding: 0.25rem 1rem;
   text-decoration: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
