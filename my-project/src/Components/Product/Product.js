@@ -8,18 +8,18 @@ const ProductItem = ({ product, setToCart }) => {
     <div key={id} id={id} className="product-item">
       <img src={image} />
       <div className="product-item-detail">
-        <h1>
+        <h2>
           {name}
           <span
             style={{
-              fontWeight: "normal",
+              fontWeight: "bold",
               fontSize: "16px",
               marginLeft: "1rem",
             }}
           >
             {price} Baht
           </span>
-        </h1>
+        </h2>
         <pre>{description}</pre>
         <a href={`/details/${id}`} id={id}>
           see more details

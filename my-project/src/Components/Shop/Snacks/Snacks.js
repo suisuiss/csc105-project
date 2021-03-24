@@ -2,12 +2,23 @@ import React from "react";
 import "./Snacks.css";
 import snacks from "../../../Snack.json";
 
-const SnacksItem = ({ id, image, price, description }) => {
+const SnacksItem = ({ name,id, image, price, description }) => {
   return (
     <div key={id} id={id} className="snack-page-item">
       <img src={image}></img>
       <div className="snack-page-item-detail">
-        <h1>{price} Baht</h1>
+      <h2>
+          {name}
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "16px",
+              marginLeft: "1rem",
+            }}
+          >
+            {price} Baht
+          </span>
+        </h2>
         <pre>{description}</pre>
         <a href={`/details/${id}`} id={id}>
           see more details

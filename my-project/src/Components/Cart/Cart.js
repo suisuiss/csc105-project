@@ -16,14 +16,14 @@ const Summary = ({ totalPrice, clearCart }) => {
 };
 
 const CartItem = ({ cart, index }) => {
-  const { id, image, price, description } = cart;
+  const {name, id, image, price, description } = cart;
   return (
     <tr key={`${id}-${index}`}>
       <td>
         <img className="page-cart-item-image" src={image} />
       </td>
       <td style={{ padding: "3rem 0", textAlign: "center" }}>
-        <span className="page-cart-item-name">{id}</span>
+        <span className="page-cart-item-name">{name}</span>
       </td>
       <td className="page-cart-item-details">
         <div>
