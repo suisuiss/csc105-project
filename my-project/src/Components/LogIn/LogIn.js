@@ -3,14 +3,14 @@ import "./logIn.css";
 
 function LogIn() {
   return (
-    <div>
-      <link rel="stylesheet" href="logIn.css" />
-      <title>Daily Deal</title>
-      <div className="logo">
-        Daily Deal
-        <p>your best shopping centre</p>
+    <div className="container">
+      <div className="details">
+        <div className="wrap-details">
+          <h1>Daily Deal</h1>
+          <p>your best shopping centre</p>
+        </div>
       </div>
-      <div className="login">
+      <div className="login-box">
         <p>Log In</p>
         <input
           type="text"
@@ -24,13 +24,15 @@ function LogIn() {
           placeholder="Password"
           required
         />
-        <a href="../Shop/Shop.js">
-          <input type="submit" Value="Log In" name="login" />
-        </a>
+        <div className="button-container">
+          <a id="login-button" href="/shop">
+            Login
+          </a>
+          <a id="signup-button" href="/signup">
+            Create New Account
+          </a>
+        </div>
       </div>
-      <a href="../SignUp/SignUp.js">
-        <input type="submit" Value="Create New Account" name="signup" />
-      </a>
     </div>
   );
 }
