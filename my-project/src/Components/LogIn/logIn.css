@@ -1,89 +1,95 @@
-html{
-    background-color:rgb(255,160,122);
-    font-family: 'Open Sans', sans-serif;
+html {
+  background-color: rgb(255, 160, 122);
+  font-family: "Open Sans", sans-serif;
 }
-.logo{
 
-font-size: 80px;
-font-family: 'Open Sans', sans-serif;
-margin-top: 3in;
-margin-left: 1.5in;
-font-weight: bold;
+.logo {
+  font-size: 80px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 3in;
+  margin-left: 1.5in;
+  font-weight: bold;
 }
-.logo>p{
-    font-size: 22px;
-    margin-top: -0.1cm;
-    margin-left: 0.7in;
-    font-weight: normal;
+
+.logo > p {
+  font-size: 22px;
+  margin-top: -0.1cm;
+  margin-left: 0.7in;
+  font-weight: normal;
 }
-input[type=text]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10cm;
-   border: none;
-   position: absolute;
-   margin-left: 7%;
-   margin-top: 2.5cm;
-   border-radius: 7px;
-  
+
+input[type="text"] {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1cm;
+  width: 10cm;
+  border: none;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 2.5cm;
+  border-radius: 7px;
 }
-input[type=password]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10cm;
-   border: none;
-   position: absolute;
-   margin-left: 7%;
-   margin-top: 4cm;
-   border-radius: 7px;
+
+input[type="password"] {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1cm;
+  width: 10cm;
+  border: none;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 4cm;
+  border-radius: 7px;
 }
-.login{
-    background-color: rgb(251,240,182);
-    height: 10cm;
-    width: 12cm;
-    position: absolute;
-    margin-left: 60%;
-   margin-top: -6.5cm;
-   border-radius: 20px;
+
+.login {
+  background-color: rgb(251, 240, 182);
+  height: 10cm;
+  width: 12cm;
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -6.5cm;
+  border-radius: 20px;
 }
-.login>p{
-    font-size: 30px;
-    position:absolute;
-    margin-left: 4.8cm;
-    font-weight: bold;
+
+.login > p {
+  font-size: 30px;
+  position: absolute;
+  margin-left: 4.8cm;
+  font-weight: bold;
 }
-a>input[name=login]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10.25cm;
-   border: none;
-   position: absolute;
-   margin-left: 7%;
-   margin-top: 5.8cm;
-   border-radius: 7px;
-   background-color: rgb(255,160,122);
-   color: white;
-   font-weight: bold;
+
+a > input[name="login"] {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1cm;
+  width: 10.25cm;
+  border: none;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 5.8cm;
+  border-radius: 7px;
+  background-color: rgb(255, 160, 122);
+  color: white;
+  font-weight: bold;
 }
-a>input[name=signup]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10.2cm;
-   border: none;
-   position: absolute;
-   margin-left: 9.95in;
-   margin-top: 1cm;
-   border-radius: 7px;
-   background-color: rgb(251,215,165);
-   color: rgb(167,146,129);
-   font-weight: bold;
-   text-align: center;
+
+a > input[name="signup"] {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1cm;
+  width: 10.2cm;
+  border: none;
+  position: absolute;
+  margin-left: 9.95in;
+  margin-top: 1cm;
+  border-radius: 7px;
+  background-color: rgb(251, 215, 165);
+  color: rgb(167, 146, 129);
+  font-weight: bold;
+  text-align: center;
 }
