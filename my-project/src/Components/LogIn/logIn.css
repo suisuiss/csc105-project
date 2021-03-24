@@ -1,89 +1,90 @@
-html{
-    background-color:rgb(255,160,122);
-    font-family: 'Open Sans', sans-serif;
+html {
+  background-color: rgb(255, 160, 122);
+  font-family: "Open Sans", sans-serif;
 }
-.logo{
 
-font-size: 80px;
-font-family: 'Open Sans', sans-serif;
-margin-top: 3in;
-margin-left: 1.5in;
-font-weight: bold;
+.container {
+  display: flex;
+  width: 75%;
+  margin: 12rem auto;
 }
-.logo>p{
-    font-size: 22px;
-    margin-top: -0.1cm;
-    margin-left: 0.7in;
-    font-weight: normal;
+
+.container > .details {
+  flex: 1;
 }
-input[type=text]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10cm;
-   border: none;
-   position: absolute;
-   margin-left: 7%;
-   margin-top: 2.5cm;
-   border-radius: 7px;
-  
+
+.container > .details > .wrap-details {
+  display: inline-block;
 }
-input[type=password]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10cm;
-   border: none;
-   position: absolute;
-   margin-left: 7%;
-   margin-top: 4cm;
-   border-radius: 7px;
+
+.details > .wrap-details > h1 {
+  font-size: 80px;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
 }
-.login{
-    background-color: rgb(251,240,182);
-    height: 10cm;
-    width: 12cm;
-    position: absolute;
-    margin-left: 60%;
-   margin-top: -6.5cm;
-   border-radius: 20px;
+
+.details > .wrap-details > p {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: -3rem;
+  text-align: center;
 }
-.login>p{
-    font-size: 30px;
-    position:absolute;
-    margin-left: 4.8cm;
-    font-weight: bold;
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  background-color: rgb(251, 240, 182);
+  border-radius: 20px;
 }
-a>input[name=login]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10.25cm;
-   border: none;
-   position: absolute;
-   margin-left: 7%;
-   margin-top: 5.8cm;
-   border-radius: 7px;
-   background-color: rgb(255,160,122);
-   color: white;
-   font-weight: bold;
+
+.login-box > p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
-a>input[name=signup]{
-    font-size: 16px;
-    display: block;
-    padding-left: 0.2cm;
-   height: 1cm;
-   width: 10.2cm;
-   border: none;
-   position: absolute;
-   margin-left: 9.95in;
-   margin-top: 1cm;
-   border-radius: 7px;
-   background-color: rgb(251,215,165);
-   color: rgb(167,146,129);
-   font-weight: bold;
-   text-align: center;
+
+.login-box > input {
+  width: 75%;
+  padding: 0;
+  margin: 0.5rem 0;
+  align-self: center;
+}
+
+.login-box > .button-container {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box > .button-container > #login-button {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 75%;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(255, 160, 122);
+  color: white;
+  font-weight: bold;
+  align-self: center;
+  margin: 0.5rem 0;
+}
+
+.login-box > .button-container > #signup-button {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 75%;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(251, 215, 165);
+  color: rgb(167, 146, 129);
+  font-weight: bold;
+  align-self: center;
+  margin: 0.5rem 0;
 }

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import LogIn from './Components/LogIn/LogIn';
 import Shop from './Components/Shop/Shop';
@@ -8,6 +9,8 @@ import { Womenclothes } from './Components/Shop/WomenClothes/WomenClothes';
 import { Accessories } from './Components/Shop/Accessories/Accessories';
 import { Gadgets } from './Components/Shop/Gadgets/Gadgets';
 import { Snacks } from './Components/Shop/Snacks/Snacks';
+
+
 
 class App extends Component {
   render() {
@@ -25,4 +28,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;

@@ -1,23 +1,40 @@
-import React from 'react';
-import './logIn.css'
+import React from "react";
+import "./logIn.css";
 
 function LogIn() {
-    return (
-        <div>
-            <link rel="stylesheet" href="logIn.css" />
-            <title>Daily Deal</title>
-            <div className="logo">Daily Deal
+  return (
+    <div className="container">
+      <div className="details">
+        <div className="wrap-details">
+          <h1>Daily Deal</h1>
           <p>your best shopping centre</p>
-            </div>
-            <div className="login">
-                <p>Log In</p>
-                <input type="text" name="username" placeholder="Email address or phone number" required />
-                <input type="password" name="password" placeholder="Password" required />
-            <a href="../Shop/Shop.js"><input type="submit" Value="Log In" name="login" /></a>
-            </div>
-            <a href="../SignUp/SignUp.js"><input type="submit" Value="Create New Account" name="signup" /></a>
         </div>
-    );
+      </div>
+      <div className="login-box">
+        <p>Log In</p>
+        <input
+          type="text"
+
+          placeholder="Email address or phone number"
+          required
+        />
+        <input
+          type="text"
+
+          placeholder="Password"
+          required
+        />
+        <div className="button-container">
+          <a id="login-button" href="/shop">
+            Login
+        </a>
+          <a id="signup-button" href="/signup">
+            Create New Account
+        </a>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default LogIn;
