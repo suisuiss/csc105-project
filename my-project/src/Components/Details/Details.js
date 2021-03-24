@@ -23,9 +23,10 @@ const DetailsItem = ({ product }) => {
   return (
     <div>
       <img src={image} />
-      <span style={{ display: "block" }}>ID:{id}</span>
-      <span style={{ display: "block" }}>Price:{price}</span>
+      
+      <span style={{ display: "block" }}>Price: {price} Baht</span>
       <p>Description: {description}</p>
+      <span style={{ display: "block" }}>ID: {id}</span>
     </div>
   );
 };
