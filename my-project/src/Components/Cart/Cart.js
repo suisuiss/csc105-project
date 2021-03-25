@@ -16,11 +16,11 @@ const Summary = ({ totalPrice, clearCart }) => {
 };
 
 const CartItem = ({ cart, index }) => {
-  const {name, id, image, price, description } = cart;
+  const { id, name, image, price, description } = cart;
   return (
     <tr key={`${id}-${index}`}>
       <td>
-        <img className="page-cart-item-image" src={image} />
+        <img className="page-cart-item-image" src={image} alt={name} />
       </td>
       <td style={{ padding: "3rem 0", textAlign: "center" }}>
         <span className="page-cart-item-name">{name}</span>
@@ -41,7 +41,7 @@ const Cart = ({ cart, clearCart }) => {
 
   return (
     <div>
-      {cart.length == 0 ? (
+      {cart.length === 0 ? (
         <div
           style={{
             width: "50%",

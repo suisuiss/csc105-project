@@ -133,7 +133,9 @@ html {
   background-color: rgb(255, 173, 141);
   border-radius: 15px;
   padding: 1.5rem 0;
+  margin-top: 1.5rem;
 }
+
 .container > .content > .categories > .cat-list {
   display: flex;
   flex-direction: column;
@@ -145,6 +147,33 @@ html {
   margin: 0;
   padding: 0.25rem 1rem;
   text-decoration: none;
+}
+
+.user-container {
+  position: relative;
+}
+
+.user-modal {
+  position: absolute;
+  background-color: blanchedalmond;
+  top: 120%;
+  left: 50%;
+  width: fit-content;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeIn ease 0.5s;
+}
+
+.user-modal::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent blanchedalmond transparent;
 }
 
 @keyframes fadeIn {

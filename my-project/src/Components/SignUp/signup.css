@@ -35,7 +35,7 @@ html {
   font-weight: bold;
 }
 
-input[name="name"] {
+input[id="name"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -48,7 +48,7 @@ input[name="name"] {
   border-radius: 7px;
 }
 
-input[name="surname"] {
+input[id="surname"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -61,7 +61,7 @@ input[name="surname"] {
   border-radius: 7px;
 }
 
-input[name="address"] {
+input[id="address"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -74,7 +74,7 @@ input[name="address"] {
   border-radius: 7px;
 }
 
-input[name="phone"] {
+input[id="phone"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -87,7 +87,7 @@ input[name="phone"] {
   border-radius: 7px;
 }
 
-input[name="email"] {
+input[id="email"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -100,7 +100,7 @@ input[name="email"] {
   border-radius: 7px;
 }
 
-input[name="passwordd"] {
+input[id="password"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -113,7 +113,7 @@ input[name="passwordd"] {
   border-radius: 7px;
 }
 
-input[name="ppassword"] {
+input[id="confirm-password"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -126,7 +126,7 @@ input[name="ppassword"] {
   border-radius: 7px;
 }
 
-input[type="submit"] {
+.signup-button {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -140,4 +140,34 @@ input[type="submit"] {
   background-color: rgb(255, 160, 122);
   color: white;
   font-weight: bold;
+}
+
+.disabled-signup-button {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1cm;
+  width: 10.25cm;
+  border: none;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 15.5cm;
+  border-radius: 7px;
+  background-color: rgb(180, 180, 180);
+  color: white;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1cm;
+  width: 10.25cm;
+  border: none;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 16.75cm;
+  color: red;
 }

@@ -2,12 +2,12 @@ import React from "react";
 import "./Gadgets.css";
 import gadgets from "../../../Gadgets.json";
 
-const GadgetsItem = ({ name,id, image, price, description }) => {
+const GadgetsItem = ({ id, name, image, price, description }) => {
   return (
     <div key={id} id={id} className="gadget-page-item">
-      <img src={image}></img>
+      <img src={image} alt={name}></img>
       <div className="gadget-page-item-detail">
-      <h2>
+        <h2>
           {name}
           <span
             style={{
@@ -19,8 +19,9 @@ const GadgetsItem = ({ name,id, image, price, description }) => {
             {price} Baht
           </span>
         </h2>
+
         <pre>{description}</pre>
-        <a href={`/details/${id}`} id={id}>
+        <a href={`/details/gadgets/${id}`} id={id}>
           see more details
         </a>
       </div>

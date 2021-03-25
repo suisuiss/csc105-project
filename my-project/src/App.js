@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import LogIn from "./Components/LogIn/LogIn";
 import Shop from "./Components/Shop/Shop";
 import SignUp from "./Components/SignUp/SignUp";
@@ -45,7 +45,7 @@ class App extends Component {
           path="/shop"
           render={(props) => <Shop cart={cart} setToCart={this.setToCart} />}
         />
-        <Route path="/details/:id" component={Details} />
+        <Route path="/details/:category/:id" component={Details} />
         <Route path="/signup" component={SignUp} />
         <Route path="/menclothes" component={Menclothes} />
         <Route path="/womenclothes" component={WomenClothes} />

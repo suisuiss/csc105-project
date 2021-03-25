@@ -42,7 +42,6 @@ html {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-
 }
 
 .login-box > input {
@@ -55,15 +54,18 @@ html {
   border: 0;
 }
 
-
-
-
 .login-box > .button-container {
   margin: 1rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.login-box > .button-container > span {
+  text-align: center;
+  font-size: 14px;
+  color: red;
 }
 
 .login-box > .button-container > #login-button {

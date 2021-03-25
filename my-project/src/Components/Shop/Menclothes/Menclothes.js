@@ -2,12 +2,12 @@ import React from "react";
 import "./MenClothes.css";
 import menclothes from "../../../Menclothes.json";
 
-const MenclothesItem = ({ name,id, image, price, description }) => {
+const MenclothesItem = ({ name, id, image, price, description }) => {
   return (
     <div key={id} id={id} className="men-clothes-page-item">
-      <img src={image}></img>
+      <img src={image} alt={name}></img>
       <div className="men-clothes-page-item-detail">
-      <h2>
+        <h2>
           {name}
           <span
             style={{
@@ -19,8 +19,9 @@ const MenclothesItem = ({ name,id, image, price, description }) => {
             {price} Baht
           </span>
         </h2>
+
         <pre>{description}</pre>
-        <a href={`/details/${id}`} id={id}>
+        <a href={`/details/menclothes/${id}`} id={id}>
           see more details
         </a>
       </div>

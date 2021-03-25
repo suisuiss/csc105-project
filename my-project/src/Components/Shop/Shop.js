@@ -5,7 +5,7 @@ import shopcart from "./shop cart.png";
 import setting from "./setting.png";
 import user from "./user.png";
 import { Product } from "../Product/Product";
-import { Redirect } from "react-router-dom";
+import fire from "../../config/fire";
 
 const notifications = [
   {
@@ -44,7 +44,11 @@ const NotificationItem = ({ image, description }, index) => {
         padding: "10px 0",
       }}
     >
-      <img style={{ width: "1.5rem", height: "1.5rem" }} src={image} />
+      <img
+        style={{ width: "1.5rem", height: "1.5rem" }}
+        alt={`shop-${index}`}
+        src={image}
+      />
       <span
         style={{
           fontSize: "13px",
@@ -63,8 +67,23 @@ const NotificationItem = ({ image, description }, index) => {
 
 const Shop = (props) => {
   const { cart, setToCart } = props;
-  // const cart = JSON.parse(localStorage.getItem("cart"));
+
   const [isShowNotification, setIsShowNotification] = useState(false);
+  const [isOpenUser, setIsOpenUser] = useState(false);
+  const [search, setSearch] = useState("");
+
+  const logout = () => {
+    fire
+      .auth()
+      .signOut()
+      .then(function () {
+        console.log("Logout!");
+        window.location.assign("/");
+      })
+      .catch(function (err) {
+        console.log(`Signout Error: ${err}`);
+      });
+  };
 
   return (
     <div className="container">
@@ -75,7 +94,11 @@ const Shop = (props) => {
         </div>
         <div style={{ flex: "1", display: "flex", flexDirection: "row" }}>
           <div className="search">
-            <input type="search" placeholder="What do you want to get?" />
+            <input
+              type="search"
+              placeholder="What do you want to get?"
+              onChange={(e) => setSearch(e.target.value)}
+            />
           </div>
           <div className="button-container">
             <div className="cart-container">
@@ -101,9 +124,22 @@ const Shop = (props) => {
             <a href=".html">
               <img src={setting} alt="Setting" name="setting" />
             </a>
-            <a href=".html">
-              <img src={user} alt="User" name="user" />
-            </a>
+            <div className="user-container">
+              <img
+                src={user}
+                style={{ cursor: "pointer" }}
+                alt="Notifications"
+                name="user"
+                onClick={() => setIsOpenUser(!isOpenUser)}
+              />
+              {isOpenUser ? (
+                <div className="user-modal">
+                  <button onClick={logout}>Logout</button>
+                </div>
+              ) : (
+                <div></div>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -130,7 +166,7 @@ const Shop = (props) => {
           </div>
         </div>
         <div style={{ flex: "1" }}>
-          <Product setToCart={setToCart} />
+          <Product search={search} setToCart={setToCart} />
         </div>
       </div>
     </div>
