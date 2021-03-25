@@ -21,7 +21,7 @@
         "image": "https://target.scene7.com/is/image/Target/GUEST_0da5bfbf-62c0-450f-9036-7f42972c5adc?wid=488&hei=488&fmt=pjpeg",
         "price": "1200",
         "description": "Sony Wireless On-Ear Headphones - Black (WHCH510/B)",
-        "details":""
+        "details":"Made For Life On The Move, The WH-CH510 Headphones Have A Lightweight Design And Are Fully Wireless. With Up To 35 Hours Of Battery Life, They’ll Have You Listening Throughout The Day."
     },
     {
         "id": "gadgets4",
@@ -29,7 +29,7 @@
         "image": "https://images-na.ssl-images-amazon.com/images/I/61wO4-s%2ByYL._SY355_.jpg",
         "price": "449",
         "description": "Earphones with Mic(Active Black)",
-        "details":""
+        "details":"boAt Bassheads 152 in Ear Wired Earphones with Mic(Active Black)"
     },
     {
         "id": "gadgets5",
@@ -37,7 +37,7 @@
         "image": "https://th.yamaha.com/en/files/494EA2C7C0A14C06AD23E7F74DCFC767_12073_396x396_326cb6edd33adf21d060b344ef0588d6.jpg",
         "price": "3890",
         "description": "NS-F160 Floorstanding speaker with powerful sound and beautiful design.",
-        "details":""
+        "details":"Floorstanding speaker with powerful sound and beautiful design. Two 16cm cone woofers deliver extremely dynamic and deep bass, and a 1.4cm balanced dome tweeter ensures that the full-range sound is gloriously rich and smooth."
     },
     {
         "id": "gadgets6",
@@ -45,7 +45,7 @@
         "image": "https://th-live-01.slatic.net/p/734c0ae5392a8d35af75176c23376ffe.jpg_q80_.webp",
         "price": "790",
         "description": "Right Handed Gaming Mouse - Razer DeathAdder Essential",
-        "details":""
+        "details":"For more than a decade, the Razer DeathAdder line has been a mainstay in the global Esports arena. It has garnered a reputation for reliability that gamers swear by due to its proven durability and ergonomics."
     },
     {
         "id": "gadgets7",
@@ -61,7 +61,7 @@
         "image": "https://www.hificorp.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10114408_HFC_9a2e.jpg",
         "price": "169",
         "description": "Openview PVR USB Stick - 32GB",
-        "details":""
+        "details":"FIFINE K678 STUDIO USB MIC WITH A LIVE MONITORING, GAIN CONTROLS, A MUTE BUTTON FOR PODCASTING"
     },
     {
         "id": "gadgets9",
@@ -69,7 +69,7 @@
         "image": "https://cdn.vitecimagingsolutions.com/pub/media/catalog/product/cache/f21b12c4bee767dd3aba74928850316b/s/d/sd-card-manfrotto-memory-cards-manprosd128-v2.jpg",
         "price": "469",
         "description": "Professional 128GB, UHS-II, V90, U3 280MB/s SDXC Memory Card",
-        "details":""
+        "details":"The Manfrotto Professional SD UHS-II (V90) Professional-Grade SDXC Memory Cards combine industrial strength and reliability with unparalleled performance."
     },
     {
         "id": "gadgets10",
@@ -77,6 +77,6 @@
         "image": "https://i.ebayimg.com/images/g/gaoAAOSwg5tc9uZ1/s-l640.jpg",
         "price": "49383",
         "description": "iRobot Roomba s9+ (9550) Robot Vacuum with Automatic Dirt Disposal- Wi-Fi Connect",
-        "details":""
+        "details":"iRobot Roomba s9+ (9550) Robot Vacuum with Automatic Dirt Disposal- Empties Itself, Wi-Fi Connected, Smart Mapping, Powerful Suction, Anti-Allergen System, Corners & Edges, Ideal for Pet Hair, Black"
     }
 ]
