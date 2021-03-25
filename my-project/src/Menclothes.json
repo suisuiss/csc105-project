@@ -4,69 +4,79 @@
         "name": "Men Shirt",
         "image": "https://dj7u9rvtp3yka.cloudfront.net/products/PIM-1546095976599-a1785a3b-a36a-491d-afe9-ad631d366262_v1-small.jpg",
         "price": "599 ",
-        "description": "Men Shirt Slim Fit Design Solid Color Long Sleeve Formal Casual Business Male Clothing"
+        "description": "Men Shirt Slim Fit Design Solid Color Long Sleeve Formal Casual Business Male Clothing",
+        "details":"Slightly slim fit. Size up for a business look or work outfit. Also, it is a good investment for your warm or cold months wardrobe."
     },
     {
         "id": "menclothes2",
         "name": "Men Pants",
         "image": "https://cdn.shopify.com/s/files/1/0071/5633/4681/products/Men_Teton_Twill_Pant_Slim_Fit_Smoke_232.jpg?v=1587646956",
         "price": "489 ",
-        "description": "MEN'S TETON TWILL PANT RELAXED FIT | SLIM FIT"
+        "description": "MEN'S TETON TWILL PANT RELAXED FIT | SLIM FIT",
+        "details":"The khakis to covet. Angled hand pockets, hidden side-seam deep-drill hand pocket, diamond-shaped action gusset, triple-stitched seams, and “mud flap” reinforced heel cuffs make this a Mountain Khakis classic. "
     },
     {
         "id": "menclothes3",
         "name": "Men Jacket",
         "image": "https://surplusstore.com.au/wp-content/uploads/2019/06/HTB1SveyXPvuK1Rjy0Faq6x2aVXa9.jpg",
         "price": "1260 ",
-        "description": "Men's Wool Jacket Warm Trench Long Outwear Overcoat Coats"
+        "description": "Men's Wool Jacket Warm Trench Long Outwear Overcoat Coats",
+        "details":""
     },
     {
         "id": "menclothes4",
         "name": "Men Hoodie",
         "image": "https://sc04.alicdn.com/kf/Ud63e8420e6864de1abfc39797ecefe8bD.jpg",
         "price": "429 ",
-        "description": "men hoodie stylish men's clothing men's hoodies, custom color plain hoodies"
+        "description": "men hoodie stylish men's clothing men's hoodies, custom color plain hoodies",
+        "details":""
     },
     {
         "id": "menclothes5",
         "name": "T shirt",
         "image": "https://5.imimg.com/data5/EN/IC/MY-26050851/v-neck-plain-tshirt-500x500.jpg",
         "price": "800 ",
-        "description": "Flexrage T Shirt"
+        "description": "Flexrage T Shirt",
+        "details":""
     },
     {
         "id": "menclothes6",
         "name": "Short Sleeve Shirt",
         "image": "https://images-na.ssl-images-amazon.com/images/I/51cKBG%2BwllL._AC_UL1050_.jpg",
         "price": "389 ",
-        "description": "Men's Short Sleeve Oxford Button Down Casual Shirt"
+        "description": "Men's Short Sleeve Oxford Button Down Casual Shirt",
+        "details":""
     },
     {
         "id": "menclothes7",
         "name": "Summer Shorts",
         "image": "https://images-na.ssl-images-amazon.com/images/I/51aTyTKKw%2BL._AC_UX385_.jpg",
         "price": "789 ",
-        "description": "Summer Shorts Men Cotton Knee Length Chinos Shorts Vintage Casual Men Shorts Fashion"
+        "description": "Summer Shorts Men Cotton Knee Length Chinos Shorts Vintage Casual Men Shorts Fashion",
+        "details":""
     },
     {
         "id": "menclothes8",
         "name": "Fit Jeans",
         "image": "https://i.pinimg.com/originals/83/ea/f5/83eaf5e02a8ca142c904b345b1f9656f.jpg",
         "price": "1299 ",
-        "description": "NEW CARROT FIT JEANS | Denim jeans men, Blue jeans"
+        "description": "NEW CARROT FIT JEANS | Denim jeans men, Blue jeans",
+        "details":""
     },
     {
         "id": "menclothes9",
         "name": "Cotton T-Shirt",
         "image": "https://cdn.shopify.com/s/files/1/0210/9734/products/nayked-apparel-men-men-s-ridiculously-soft-long-sleeve-100-cotton-t-shirt-small-heather-grey-na0136-30589738375_1178x1390_crop_center.jpg?v=1607373961",
         "price": "800 ",
-        "description": "MEN'S RIDICULOUSLY SOFT LONG SLEEVE 100% COTTON T-SHIRT"
+        "description": "MEN'S RIDICULOUSLY SOFT LONG SLEEVE 100% COTTON T-SHIRT",
+        "details":""
     },
     {
         "id": "menclothes10",
         "name": "Tank Top",
         "image": "https://www.myshirt.com.my/wp-content/uploads/2016/06/2200-Gildan-Ultra-Cotton-Adult-Tank-Top_Navy.jpg",
         "price": "179 ",
-        "description": "Gildan Ultra Cotton Tank Top"
+        "description": "Gildan Ultra Cotton Tank Top",
+        "details":""
     }
 ]

@@ -19,17 +19,19 @@ const Details = () => {
 };
 
 const DetailsItem = ({ product }) => {
-  const { name,id, image, price, description} = product;
+  const { name,id, image, price, description,details} = product;
 
   return (
     <div>
       <img src={image} />
       <span style={{ display: "block" }}>{name} </span>
       <span style={{ display: "block" }}>Price: {price} Baht</span>
-      <p>Description: {description}</p>
       <span style={{ display: "block" }}>ID: {id}</span>
+      <p>Description: {description}</p>
+      <p>Details: {details}</p>
     </div>
   );
 };
+
 
 export default Details;

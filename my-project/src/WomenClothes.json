@@ -4,60 +4,70 @@
         "name": "SATIN WRAP DRESS",
         "image":"https://i.pinimg.com/474x/70/95/2d/70952d739195b005bf1435b2c9fc57c2.jpg",
         "price": "569 ",
-        "description":"SHAPE BURGUNDY SATIN WRAP DRESS"
+        "description":"SHAPE BURGUNDY SATIN WRAP DRESS",
+        "details":"Get ready for the party season with this wrap dress. Featuring a burgundy satin fabric, wrap style to show off your killer curves and a flattering plunge neckline for the body confident. Team with hoops and strappy heels."
       },
       {"id":"womenclothes2",
         "name": "Sleeveless Blouse",
         "image":"https://i.pinimg.com/originals/f6/cc/c5/f6ccc530b293cadf83151d653a77b730.jpg",
         "price": "399 ",
-        "description":"Women High Neck Sleeveless Blouse"
+        "description":"Women High Neck Sleeveless Blouse",
+        "details":"Sleeveless Top In Light Stretchable Fabric Featuring Dramatic Turtleneck Design With Subtle Glitter For Extra Glam Factor."
     },
       {"id":"womenclothes3",
         "name": "Women's Winter Coa",
         "image":"https://images-na.ssl-images-amazon.com/images/I/514yNTcEjDL._UX679_.jpg",
         "price": "1380 ",
-        "description":"Warm Trench Parka,Women's Winter Coat Jacket Belt Overcoat Changeshopping"
+        "description":"Warm Trench Parka,Women's Winter Coat Jacket Belt Overcoat Changeshopping",
+        "details":""
     },
       {"id":"womenclothes4",
         "name": "Bear Women Hoodie",
         "image":"https://img.brownsfashion.com/palm-angels-bear-applique-hoodie_15693549_31457283_1920.jpg?c=2",
         "price": "2239 ",
-        "description":"Bear Women Hoodie In Off Pink"
+        "description":"Bear Women Hoodie In Off Pink",
+        "details":""
     },
       {"id":"womenclothes5",
         "name": "Woman T-shirt",
         "image":"https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb2%2Ffd%2Fb2fd220fe1608a9fb3f266e205cb0919e13e6399.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
         "price": "379 ",
-        "description":"Woman T-shirt in lightweight jersey with a rounded hem. Slightly longer at the back."
+        "description":"Woman T-shirt in lightweight jersey with a rounded hem. Slightly longer at the back.",
+        "details":""
     },
       {"id":"womenclothes6",
         "name": "Pakistani Women Dresses",
         "image":"https://www.katescloset.com.au/uploads/2/1/2/9/21295692/478547365_orig.jpg",
         "price": "2170 ",
-        "description":"Pakistani Women Dresses, Long Sleeve Midi Dress Women's Vintage"
+        "description":"Pakistani Women Dresses, Long Sleeve Midi Dress Women's Vintage",
+        "details":""
     },
       {"id":"womenclothes7",
         "name": "Long Sleeve T-shirt",
         "image":"https://i.sportisimo.com/products/images/1043/1043287/450x450/o-neill-0p7102-5204-lw-essential-ls-t-shirt_0.jpg",
         "price": "390 ",
-        "description":"Women's Long Sleeve Essential T-shirt"
+        "description":"Women's Long Sleeve Essential T-shirt",
+        "details":""
     },
       {"id":"womenclothes8",
         "name": "Shorts",
         "image":"https://scene7.zumiez.com/is/image/zumiez/cat_max/Dickies-Lilac-Roll-Hem-Shorts-_341238.jpg",
         "price": "539 ",
-        "description":"Dickies Lilac Roll Hem Shorts"
+        "description":"Dickies Lilac Roll Hem Shorts",
+        "details":""
     },
       {"id":"womenclothes9",
         "name": "5-pocket jeans",
         "image":"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F14%2F2020%2F10%2F19%2F101920-ae-ne-x-t-level-curvy-high-waisted-jegging-embed.jpg",
         "price": "1800 ",
-        "description":"Shadow 5-pocket jeans"
+        "description":"Shadow 5-pocket jeans",
+        "details":""
     },
       {"id":"womenclothes10",
         "name": "Blouse For Women",
         "image":"https://i5.walmartimages.com/asr/77b548c2-7c23-4be8-9305-e105120ce8e2_1.9900627e0c1c199c53e60a558279786e.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
         "price": "779 ",
-        "description":"Stylish Half Sleeve Solid Color Blouse For Women"
+        "description":"Stylish Half Sleeve Solid Color Blouse For Women",
+        "details":""
     }
 ]

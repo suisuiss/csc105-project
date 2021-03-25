@@ -4,69 +4,79 @@
         "name": "Chocolate Cookies",
         "image": "https://celebratingsweets.com/wp-content/uploads/2014/08/Chocolate-Cookies-3.jpg",
         "price": "99 Baht",
-        "description": "Soft and chewy Chocolate Cookies loaded with three kinds of chocolate"
+        "description": "Soft and chewy Chocolate Cookies loaded with three kinds of chocolate",
+        "details":"There are three kinds of chocolate chips in cookies – milk chocolate, semi-sweet chocolate, and white chocolate."
     },
     {
         "id": "snacks2",
         "name": "Healthy Dark Chocolate",
         "image": "https://www.aimeemars.com/wp-content/uploads/2020/07/IMG_0727.jpg",
         "price": "99 Baht",
-        "description": "Healthy Dark Chocolate Bark"
+        "description": "Healthy Dark Chocolate Bark",
+        "details":"Most of our ingredients are low-carb (or keto) and gluten-free, but some are not."
     },
     {
         "id": "snacks3",
         "name": "Korean Rice Snack",
         "image": "https://i.pinimg.com/originals/1f/d2/a5/1fd2a5182fd4abe16cc260dbead8ed93.jpg",
         "price": "120 Baht",
-        "description": "Banana Flavored Korean Rice Snack from Neo Congjolmi "
+        "description": "Banana Flavored Korean Rice Snack from Neo Congjolmi ",
+        "details":""
     },
     {
         "id": "snacks4",
         "name": "Stix – Crispy Corn Snacks",
         "image": "https://m.media-amazon.com/images/I/81WsiF+59DL._AC_SS450_.jpg",
         "price": "59 Baht",
-        "description": "Roll over image to zoom in Stix – Crispy Corn Snacks – Flavor (Hot Chili Pepper & Lime)"
+        "description": "Roll over image to zoom in Stix – Crispy Corn Snacks – Flavor (Hot Chili Pepper & Lime)",
+        "details":""
     },
     {
         "id": "snacks5",
         "name": "SUPER RING SNACKS",
         "image": "https://i.ebayimg.com/images/g/4BcAAOSwEFheMGVT/s-l300.jpg",
         "price": "245 Baht",
-        "description": "SUPER RING SNACKS MALAYSIA 60g"
+        "description": "SUPER RING SNACKS MALAYSIA 60g",
+        "details":""
     },
     {
         "id": "snacks6",
         "name": "Happy Turn-rice cracker",
         "image": "https://cf.shopee.co.th/file/1410315c2a555fb9137d5bba48c92c7a",
         "price": "139 Baht",
-        "description": "Japan’s delicious “Happy Turn” rice cracker snack gets a new rich yuzukoshō flavour"
+        "description": "Japan’s delicious “Happy Turn” rice cracker snack gets a new rich yuzukoshō flavour",
+        "details":""
     },
     {
         "id": "snacks7",
         "name": "Sakura Macaronsn",
         "image": "https://i.pinimg.com/736x/d9/d4/52/d9d452917896a2aecc082d08a29e9209.jpg",
         "price": "289 Baht",
-        "description": "6 pieces of Sakura French Macarons"
+        "description": "6 pieces of Sakura French Macarons",
+        "details":""
     },
     {
         "id": "snacks8",
         "name": "Brioche Scone",
         "image": "https://www.turner-price.com/media/catalog/product/cache/266be06552e40de495ca8a0ecf632bea/d/f/dfc33b4c067e474fbb35faf05c163974.jpg",
         "price": "250 Baht",
-        "description": "Speciality Breads Scioche Brioche Scone (5 pieces)"
+        "description": "Speciality Breads Scioche Brioche Scone (5 pieces)",
+        "details":""
     },
     {
         "id": "snacks9",
         "name": "Fudgy Brownies",
         "image": "https://i2.wp.com/ifyougiveablondeakitchen.com/wp-content/uploads/2014/05/fudgy-chewy-brownies-2020-2.jpg",
         "price": "270Baht",
-        "description": "Fudgy Brownies 1 box (9 pieces)"
+        "description": "Fudgy Brownies 1 box (9 pieces)",
+        "details":""
     },
     {
         "id": "snacks10",
         "name": "Curry Puff",
         "image": "https://whattocooktoday.com/wp-content/uploads/2019/08/curry-puff-32.jpg",
         "price": "159 Baht",
-        "description": "potato spiral curry puff filled with aromatic potato and chicken filling (10 pieces)"
+        "description": "potato spiral curry puff filled with aromatic potato and chicken filling (10 pieces)",
+        "details":""
     }
 ]

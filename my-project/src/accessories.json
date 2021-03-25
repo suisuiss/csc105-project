@@ -4,56 +4,64 @@
     "name": "Sun Hat",
     "image": "https://www.haglofs.com/dw/image/v2/BBTN_PRD/on/demandware.static/-/Sites-master-catalog-haglofs/default/dw2674d8dc/hi-res/6043062C5_S20_2_grey.jpg?sw=350&sh=350&sm=fit",
     "price": "239",
-    "description": "A sun hat with a brim - perfect for protection from a number of adverse weather conditions."
+    "description": "A sun hat with a brim - perfect for protection from a number of adverse weather conditions.",
+    "details":"A sun hat with a brim - perfect for protection from a number of adverse weather conditions. DWR-treated and equipped with breathable mesh on the inside and an adjustable storm strap, making it cool, comfortable, practical and a new favourite travel companion. Designed with a graphic logo label at the front, for a distinctive look."
   },
   {
     "id": "accessories2",
     "name": "LEATHER HIGH-HEEL SHOES",
     "image": "https://static.zara.net/photos///2020/I/1/1/p/1202/610/050/2/w/1920/1202610050_1_1_1.jpg?ts=1597059771480",
     "price": "299",
-    "description": "ASYMMETRIC LEATHER HIGH-HEEL SHOES"
+    "description": "ASYMMETRIC LEATHER HIGH-HEEL SHOES",
+    "details":"PINK LEATHER HIGH-HEEL SHOES. ASYMMETRIC LEATHER UPPER. LINED STILETTO HEELS. POINTED TOES. AIRFIT®. FLEXIBLE TECHNICAL LATEX FOAM INSOLE, DESIGNED TO OFFER GREATER COMFORT. HEEL HEIGHT: 9.7 CM. / 3.8″"
   },
   {
     "id": "accessories3",
     "name": "Wool Scarf",
     "image": "https://www.bodenimages.com/productimages/zoom/20wwin_a0807_nav.jpg",
     "price": "329",
-    "description": "Wool Scarf - Navy"
+    "description": "Wool Scarf - Navy",
+    "details":""
   },
   {
     "id": "accessories4",
     "name": "Sunglasses",
     "image": "https://i.pinimg.com/originals/11/72/50/117250d6159229d4ab722c3ed3b690fc.jpg",
     "price": "459",
-    "description": "Retro Round Polarized Sunglasses Silver Metal Circle Frame Gray Lens Circular"
+    "description": "Retro Round Polarized Sunglasses Silver Metal Circle Frame Gray Lens Circular",
+    "details":""
   },
   {
     "id": "accessories5",
     "name": "Necktie",
     "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5469989_png/dazzling-swan-necklace--multi-colored--rose-gold-tone-plated-swarovski-5469989.png",
     "price": "639",
-    "description": "Woodworker's Necktie"
+    "description": "Woodworker's Necktie",
+    "details":""
   },
   {
     "id": "accessories6",
     "name": "Gloves",
     "image": "https://earthseasky.co.nz/wp-content/uploads/2011/10/polypro_gloves.jpg",
     "price": "199",
-    "description": "First Layer gloves are ideal for providing a layer of warmth and insulation for your hands."
+    "description": "First Layer gloves are ideal for providing a layer of warmth and insulation for your hands.",
+    "details":""
   },
   {
     "id": "accessories7",
     "name": "Socks",
     "image": "https://www.rei.com/media/fb51e06c-8b92-406f-8803-6fb2c84ada00?size=784x588",
     "price": "330",
-    "description": "Injinji Liner Crew Socks"
+    "description": "Injinji Liner Crew Socks",
+    "details":""
   },
   {
     "id": "accessories8",
     "name": "Rain Boot",
     "image": "https://www.chloe.com/product_image/11743517BJ/f/w282.jpg",
     "price": "514",
-    "description": "BETTY RAIN BOOT PVC Black"
+    "description": "BETTY RAIN BOOT PVC Black",
+    "details":""
   },
   {
 
@@ -61,13 +69,15 @@
     "name": "Feather Drop Earrings",
     "image": "https://media.beaverbrooks.co.uk/i/beaverbrooks/S112750_0/Silver-Rose-Gold-Plated-and-Gold-Plated-Feather-Drop-Earrings-0112750?$PDP_M$",
     "price": "517",
-    "description": "Silver, Rose Gold Plated and Gold Plated Feather Drop Earrings"
+    "description": "Silver, Rose Gold Plated and Gold Plated Feather Drop Earrings",
+    "details":""
   },
   {
     "id": "accessories10",
     "name": "Sneakers",
     "image": "https://rukminim1.flixcart.com/image/880/1056/k0plpjk0/shoe/8/a/t/8908723-42-roadster-navy-blue-original-imafk9wchnsnfggp.jpeg?q=50",
     "price": "2199",
-    "description": "ROADSTER Sneakers For Men (Navy)"
+    "description": "ROADSTER Sneakers For Men (Navy)",
+    "details":""
   }
 ]
