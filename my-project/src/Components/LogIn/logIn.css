@@ -11,16 +11,21 @@ html {
 
 .login-container > .details {
   flex: 1;
+
 }
 
 .login-container > .details > .wrap-details {
   display: inline-block;
+  
 }
 
 .details > .wrap-details > h1 {
   font-size: 80px;
   font-family: "Open Sans", sans-serif;
   display: inline-block;
+  margin-top: 2.5cm;
+  margin-left: -1cm;
+ 
 }
 
 .details > .wrap-details > p {
@@ -28,6 +33,7 @@ html {
   font-weight: normal;
   margin-top: -3rem;
   text-align: center;
+  margin-left: -1cm;
 }
 
 .login-box {
@@ -47,11 +53,13 @@ html {
 .login-box > input {
   width: 75%;
   height: 2rem;
-  padding: 0;
+  padding: 0.2cm;
   margin: 0.5rem 0;
   align-self: center;
-  background-color: rgb(255, 235, 205);
-  border: 0;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  border: none;
+  font-size: 16px;
 }
 
 .login-box > .button-container {

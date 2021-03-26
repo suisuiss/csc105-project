@@ -48,7 +48,7 @@ export const Product = (props) => {
         .map((product) => (
           <ProductItem product={product} setToCart={setToCart} />
         ))}
-        
+
     </div>
   );
 };

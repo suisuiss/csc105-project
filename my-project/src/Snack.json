@@ -5,7 +5,7 @@
         "image": "https://celebratingsweets.com/wp-content/uploads/2014/08/Chocolate-Cookies-3.jpg",
         "price": "99 Baht",
         "description": "Soft and chewy Chocolate Cookies loaded with three kinds of chocolate",
-        "details":"There are three kinds of chocolate chips in cookies – milk chocolate, semi-sweet chocolate, and white chocolate."
+        "details": "There are three kinds of chocolate chips in cookies – milk chocolate, semi-sweet chocolate, and white chocolate."
     },
     {
         "id": "snacks2",
@@ -13,7 +13,7 @@
         "image": "https://www.aimeemars.com/wp-content/uploads/2020/07/IMG_0727.jpg",
         "price": "99 Baht",
         "description": "Healthy Dark Chocolate Bark",
-        "details":"Most of our ingredients are low-carb (or keto) and gluten-free, but some are not."
+        "details": "Most of our ingredients are low-carb (or keto) and gluten-free, but some are not."
     },
     {
         "id": "snacks3",
@@ -21,7 +21,7 @@
         "image": "https://i.pinimg.com/originals/1f/d2/a5/1fd2a5182fd4abe16cc260dbead8ed93.jpg",
         "price": "120 Baht",
         "description": "Banana Flavored Korean Rice Snack from Neo Congjolmi ",
-        "details":"Neo / nexture one congjolmi kreteker rice 60g is a food made from rice and quality ingredients that are hygienic processed to produce quality food with special flavor."
+        "details": "Neo / nexture one congjolmi kreteker rice 60g is a food made from rice and quality ingredients that are hygienic processed to produce quality food with special flavor."
     },
     {
         "id": "snacks4",
@@ -29,7 +29,7 @@
         "image": "https://m.media-amazon.com/images/I/81WsiF+59DL._AC_SS450_.jpg",
         "price": "59 Baht",
         "description": "Roll over image to zoom in Stix – Crispy Corn Snacks – Flavor (Hot Chili Pepper & Lime)",
-        "details":"STIX SNACKS: Crunchy extruded corn snacks with a unique hot and spicy flavor – crispy snacks from the makers of Takis."
+        "details": "STIX SNACKS: Crunchy extruded corn snacks with a unique hot and spicy flavor – crispy snacks from the makers of Takis."
     },
     {
         "id": "snacks5",
@@ -37,7 +37,7 @@
         "image": "https://i.ebayimg.com/images/g/4BcAAOSwEFheMGVT/s-l300.jpg",
         "price": "245 Baht",
         "description": "SUPER RING SNACKS MALAYSIA 60g",
-        "details":"Oriental Super Ring Cheese Flavoured Snacks. Ttrusted for its taste and quality is one of our most popular snack products!"
+        "details": "Oriental Super Ring Cheese Flavoured Snacks. Ttrusted for its taste and quality is one of our most popular snack products!"
     },
     {
         "id": "snacks6",
@@ -45,7 +45,7 @@
         "image": "https://cf.shopee.co.th/file/1410315c2a555fb9137d5bba48c92c7a",
         "price": "139 Baht",
         "description": "Japan’s delicious “Happy Turn” rice cracker snack gets a new rich yuzukoshō flavour",
-        "details":"“Happy Turn” is a hugely popular, light rice cracker snack in Japan that has been loved for over 40 years since its first release back in 1976. Yuzukoshō is another popular condiment in Japan like wasabi. It’s made from chili peppers, yuzu and salt."
+        "details": "“Happy Turn” is a hugely popular, light rice cracker snack in Japan that has been loved for over 40 years since its first release back in 1976. Yuzukoshō is another popular condiment in Japan like wasabi. It’s made from chili peppers, yuzu and salt."
     },
     {
         "id": "snacks7",
@@ -53,7 +53,7 @@
         "image": "https://i.pinimg.com/736x/d9/d4/52/d9d452917896a2aecc082d08a29e9209.jpg",
         "price": "289 Baht",
         "description": "6 pieces of Sakura French Macarons",
-        "details":"French macarons are delicate sandwich cookies with a crisp exterior and sakura flavors."
+        "details": "French macarons are delicate sandwich cookies with a crisp exterior and sakura flavors."
     },
     {
         "id": "snacks8",
@@ -61,7 +61,7 @@
         "image": "https://www.turner-price.com/media/catalog/product/cache/266be06552e40de495ca8a0ecf632bea/d/f/dfc33b4c067e474fbb35faf05c163974.jpg",
         "price": "250 Baht",
         "description": "Speciality Breads Scioche Brioche Scone (5 pieces)",
-        "details":"Frozen Chocolate Brioche Scone with special ingredients"
+        "details": "Frozen Chocolate Brioche Scone with special ingredients"
     },
     {
         "id": "snacks9",
@@ -69,7 +69,7 @@
         "image": "https://i2.wp.com/ifyougiveablondeakitchen.com/wp-content/uploads/2014/05/fudgy-chewy-brownies-2020-2.jpg",
         "price": "270Baht",
         "description": "Fudgy Brownies 1 box (9 pieces)",
-        "details":"The Best, Fudgy ONE BOWL Cocoa Brownies! A special addition gives these brownies a super fudgy centre without losing that crispy, crackly top! FOR THICKER DOUBLE BATCH BROWNIES"
+        "details": "The Best, Fudgy ONE BOWL Cocoa Brownies! A special addition gives these brownies a super fudgy centre without losing that crispy, crackly top! FOR THICKER DOUBLE BATCH BROWNIES"
     },
     {
         "id": "snacks10",
@@ -77,6 +77,6 @@
         "image": "https://whattocooktoday.com/wp-content/uploads/2019/08/curry-puff-32.jpg",
         "price": "159 Baht",
         "description": "potato spiral curry puff filled with aromatic potato and chicken filling (10 pieces)",
-        "details":"These unique Spiral Curry Puffs is a very popular tea-time snack especially for special occasions. The shell-like crusts add such a crispy crunch that is so addictive that you may not be able to stop after taking a bite."
+        "details": "These unique Spiral Curry Puffs is a very popular tea-time snack especially for special occasions. The shell-like crusts add such a crispy crunch that is so addictive that you may not be able to stop after taking a bite."
     }
 ]
