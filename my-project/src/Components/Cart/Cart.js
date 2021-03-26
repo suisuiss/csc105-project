@@ -62,7 +62,7 @@ const Cart = ({ cart, clearCart }) => {
             <thead>
               <tr>
                 <th>Image</th>
-                <th style={{ width: "20%" }}>id</th>
+                <th style={{ width: "20%" }}>Product ID</th>
                 <th>Descriptions</th>
                 <th style={{ width: "10%", textAlign: "right" }}>Quantity</th>
                 <th style={{ width: "15%", textAlign: "right" }}>Price</th>

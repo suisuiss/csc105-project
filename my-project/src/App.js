@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import LogIn from "./Components/LogIn/LogIn";
 import Shop from "./Components/Shop/Shop";
 import SignUp from "./Components/SignUp/SignUp";
@@ -9,7 +9,7 @@ import { Accessories } from "./Components/Shop/Accessories/Accessories";
 import { Gadgets } from "./Components/Shop/Gadgets/Gadgets";
 import { Snacks } from "./Components/Shop/Snacks/Snacks";
 import Details from "./Components/Details/Details";
-import Setting from "./Components/Setting/Setting";
+
 import Cart from "./Components/Cart/Cart";
 
 class App extends Component {
@@ -47,12 +47,25 @@ class App extends Component {
         />
         <Route path="/details/:category/:id" component={Details} />
         <Route path="/signup" component={SignUp} />
-        <Route path="/menclothes" component={Menclothes} />
-        <Route path="/womenclothes" component={WomenClothes} />
-        <Route path="/accessories" component={Accessories} />
-        <Route path="/gadgets" component={Gadgets} />
-        <Route path="/snacks" component={Snacks} />
-        <Route path="/setting" component={Setting} />
+        <Route
+          path="/menclothes"
+          render={(props) => (
+            <Menclothes cart={cart} setToCart={this.setToCart} />
+          )}
+        />
+        <Route path="/womenclothes" render={(props) => (
+          <WomenClothes cart={cart} setToCart={this.setToCart} />
+        )} />
+        <Route path="/accessories" render={(props) => (
+          <Accessories cart={cart} setToCart={this.setToCart} />
+        )} />
+        <Route path="/gadgets" render={(props) => (
+          <Gadgets cart={cart} setToCart={this.setToCart} />
+        )} />
+        <Route path="/snacks" render={(props) => (
+          <Snacks cart={cart} setToCart={this.setToCart} />
+        )} />
+       
         <Route
           path="/cart"
           render={(props) => <Cart cart={cart} clearCart={this.clearCart} />}

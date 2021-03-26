@@ -2,7 +2,8 @@ import React from "react";
 import "./MenClothes.css";
 import menclothes from "../../../Menclothes.json";
 
-const MenclothesItem = ({ name, id, image, price, description }) => {
+const MenclothesItem = ({ item, setToCart }) => {
+  const { name, id, image, price, description } = item;
   return (
     <div key={id} id={id} className="men-clothes-page-item">
       <img src={image} alt={name}></img>
@@ -27,18 +28,21 @@ const MenclothesItem = ({ name, id, image, price, description }) => {
       </div>
       <div className="men-clothes-page-button-container">
         <div className="wrap-men-clothes-page-button-container">
-          <button>Add To Shopping Cart</button>
+          <button onClick={() => setToCart(item)}>Add To Shopping Cart</button>
         </div>
       </div>
     </div>
   );
 };
 
-export const Menclothes = () => {
+export const Menclothes = (props) => {
+  const { setToCart } = props;
   return (
     <div style={{ width: "85%", margin: "auto" }}>
       <h1 id="menclothes">Men Clothes</h1>
-      {menclothes.map((a) => MenclothesItem(a))}
+      {menclothes.map((a) => (
+        <MenclothesItem item={a} setToCart={setToCart} />
+      ))}
     </div>
   );
 };

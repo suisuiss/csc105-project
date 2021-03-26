@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./shop.css";
 import bell from "./bell.png";
 import shopcart from "./shop cart.png";
-import setting from "./setting.png";
+
 import user from "./user.png";
 import { Product } from "../Product/Product";
 import fire from "../../config/fire";
@@ -120,9 +120,8 @@ const Shop = (props) => {
               />
               {isShowNotification ? <NotificationContainer /> : <div></div>}
             </div>
-            <a href="../Setting">
-              <img src={setting} alt="Setting" name="setting" />
-            </a>
+            
+           
             <div className="user-container">
               <img
                 src={user}

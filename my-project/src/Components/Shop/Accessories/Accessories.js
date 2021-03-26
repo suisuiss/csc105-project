@@ -2,7 +2,8 @@ import React from "react";
 import "./Accessories.css";
 import accessories from "../../../accessories.json";
 
-const AccessorieItem = ({ id, name, image, price, description }) => {
+const AccessoriesItem = ({ item, setToCart }) => {
+  const { name, id, image, price, description } = item;
   return (
     <div key={id} id={id} className="accessories-page-item">
       <img src={image} alt={name}></img>
@@ -27,18 +28,21 @@ const AccessorieItem = ({ id, name, image, price, description }) => {
       </div>
       <div className="accessories-page-button-container">
         <div className="wrap-accessories-page-button-container">
-          <button>Add To Shopping Cart</button>
+          <button onClick={() => setToCart(item)}>Add To Shopping Cart</button>
         </div>
       </div>
     </div>
   );
 };
 
-export const Accessories = () => {
+export const Accessories = (props) => {
+  const { setToCart } = props;
   return (
     <div style={{ width: "85%", margin: "auto" }}>
       <h1 id="accessories">Accessories</h1>
-      {accessories.map((a) => AccessorieItem(a))}
+      {accessories.map((a) => (
+        <AccessoriesItem item={a} setToCart={setToCart} />
+      ))}
     </div>
   );
 };

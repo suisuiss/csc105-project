@@ -2,7 +2,8 @@ import React from "react";
 import "./Snacks.css";
 import snacks from "../../../Snack.json";
 
-const SnacksItem = ({ name, id, image, price, description }) => {
+const SnacksItem = ({ item, setToCart}) => {
+  const { name, id, image, price, description } = item;
   return (
     <div key={id} id={id} className="snack-page-item">
       <img src={image} alt={name}></img>
@@ -27,18 +28,22 @@ const SnacksItem = ({ name, id, image, price, description }) => {
       </div>
       <div className="snack-page-button-container">
         <div className="wrap-snack-page-button-container">
-          <button>Add To Shopping Cart</button>
+        <button onClick={() => setToCart(item)}>Add To Shopping Cart</button>
         </div>
       </div>
     </div>
   );
 };
 
-export const Snacks = () => {
+export const Snacks = (props) => {
+  const { setToCart } = props;
+
   return (
     <div style={{ width: "85%", margin: "auto" }}>
       <h1 id="snacks">Snacks</h1>
-      {snacks.map((a) => SnacksItem(a))}
+      {snacks.map((a) => (
+        <SnacksItem item={a} setToCart={setToCart} />
+      ))}
     </div>
   );
 };
