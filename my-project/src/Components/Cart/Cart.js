@@ -23,7 +23,7 @@ const CartItem = ({ cart, index }) => {
         <img className="page-cart-item-image" src={image} alt={name} />
       </td>
       <td style={{ padding: "3rem 0", textAlign: "center" }}>
-        <span className="page-cart-item-name">{name}</span>
+        <span className="page-cart-item-name">{id}</span>
       </td>
       <td className="page-cart-item-details">
         <div>
@@ -62,8 +62,8 @@ const Cart = ({ cart, clearCart }) => {
             <thead>
               <tr>
                 <th>Image</th>
-                <th style={{ width: "20%" }}>Name</th>
-                <th>Details</th>
+                <th style={{ width: "20%" }}>id</th>
+                <th>Descriptions</th>
                 <th style={{ width: "10%", textAlign: "right" }}>Quantity</th>
                 <th style={{ width: "15%", textAlign: "right" }}>Price</th>
               </tr>

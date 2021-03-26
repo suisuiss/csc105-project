@@ -67,7 +67,6 @@ const NotificationItem = ({ image, description }, index) => {
 
 const Shop = (props) => {
   const { cart, setToCart } = props;
-
   const [isShowNotification, setIsShowNotification] = useState(false);
   const [isOpenUser, setIsOpenUser] = useState(false);
   const [search, setSearch] = useState("");
@@ -121,7 +120,7 @@ const Shop = (props) => {
               />
               {isShowNotification ? <NotificationContainer /> : <div></div>}
             </div>
-            <a href=".html">
+            <a href="../Setting">
               <img src={setting} alt="Setting" name="setting" />
             </a>
             <div className="user-container">
