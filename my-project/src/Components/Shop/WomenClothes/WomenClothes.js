@@ -36,13 +36,18 @@ const WomenclothesItem = ({ item, setToCart }) => {
 };
 
 export const WomenClothes = (props) => {
-  const { setToCart } = props;
+  const { search, setToCart } = props;
+  
   return (
-    <div style={{ width: "85%", margin: "auto" }}>
-      <h1 id="womenclothes">Women Clothes</h1>
-      {womenclothes.map((a) => (
-        <WomenclothesItem item={a} setToCart={setToCart} />
-      ))}
-    </div>
+    <div className="product-container">
+    <h1 id="womenclothes">Women Clothes</h1>
+    {womenclothes
+   .filter((a) =>
+   a.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+ )
+    .map((a) => (
+      <WomenclothesItem item={a} setToCart={setToCart} />
+    ))}
+  </div>
   );
 };

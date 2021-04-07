@@ -2,6 +2,7 @@ import React from "react";
 import "./MenClothes.css";
 import menclothes from "../../../Menclothes.json";
 
+
 const MenclothesItem = ({ item, setToCart }) => {
   const { name, id, image, price, description } = item;
   return (
@@ -35,14 +36,21 @@ const MenclothesItem = ({ item, setToCart }) => {
   );
 };
 
+
 export const Menclothes = (props) => {
-  const { setToCart } = props;
+  const { search, setToCart } = props;
+  
   return (
-    <div style={{ width: "85%", margin: "auto" }}>
+    <div className="product-container">
       <h1 id="menclothes">Men Clothes</h1>
-      {menclothes.map((a) => (
+      {menclothes
+     .filter((a) =>
+     a.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+   )
+      .map((a) => (
         <MenclothesItem item={a} setToCart={setToCart} />
       ))}
     </div>
+    
   );
 };

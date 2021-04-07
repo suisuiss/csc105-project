@@ -40,7 +40,7 @@ export const Product = (props) => {
   const { search, setToCart } = props;
   return (
     <div className="product-container">
-      <h2 id="recommend">Recommended Product</h2>
+      <h1 id="recommend">Recommended Product</h1>
       {products
         .filter((product) =>
           product.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())

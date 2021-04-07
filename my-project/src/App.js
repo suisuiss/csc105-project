@@ -3,11 +3,11 @@ import LogIn from "./Components/LogIn/LogIn";
 import Shop from "./Components/Shop/Shop";
 import SignUp from "./Components/SignUp/SignUp";
 import { Route } from "react-router-dom";
-import { Menclothes } from "./Components/Shop/Menclothes/Menclothes";
-import { WomenClothes } from "./Components/Shop/WomenClothes/WomenClothes";
-import { Accessories } from "./Components/Shop/Accessories/Accessories";
-import { Gadgets } from "./Components/Shop/Gadgets/Gadgets";
-import { Snacks } from "./Components/Shop/Snacks/Snacks";
+import { MenClothesShop } from "./Components/Shop/Menclothes/MenClothesShop";
+import { WomenClothesShop } from "./Components/Shop/WomenClothes/WomenClothesShop";
+import { AccessoriesShop } from "./Components/Shop/Accessories/AccessoriesShop";
+import { GadgetsShop } from "./Components/Shop/Gadgets/GadgetsShop";
+import { SnacksShop } from "./Components/Shop/Snacks/SnacksShop";
 import Details from "./Components/Details/Details";
 
 import Cart from "./Components/Cart/Cart";
@@ -50,20 +50,20 @@ class App extends Component {
         <Route
           path="/menclothes"
           render={(props) => (
-            <Menclothes cart={cart} setToCart={this.setToCart} />
+            <MenClothesShop cart={cart} setToCart={this.setToCart} />
           )}
         />
         <Route path="/womenclothes" render={(props) => (
-          <WomenClothes cart={cart} setToCart={this.setToCart} />
+          <WomenClothesShop cart={cart} setToCart={this.setToCart} />
         )} />
         <Route path="/accessories" render={(props) => (
-          <Accessories cart={cart} setToCart={this.setToCart} />
+          <AccessoriesShop cart={cart} setToCart={this.setToCart} />
         )} />
         <Route path="/gadgets" render={(props) => (
-          <Gadgets cart={cart} setToCart={this.setToCart} />
+          <GadgetsShop cart={cart} setToCart={this.setToCart} />
         )} />
         <Route path="/snacks" render={(props) => (
-          <Snacks cart={cart} setToCart={this.setToCart} />
+          <SnacksShop cart={cart} setToCart={this.setToCart} />
         )} />
        
         <Route

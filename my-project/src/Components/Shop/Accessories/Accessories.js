@@ -36,11 +36,15 @@ const AccessoriesItem = ({ item, setToCart }) => {
 };
 
 export const Accessories = (props) => {
-  const { setToCart } = props;
+  const { search,setToCart } = props;
   return (
-    <div style={{ width: "85%", margin: "auto" }}>
+    <div className="product-container">
       <h1 id="accessories">Accessories</h1>
-      {accessories.map((a) => (
+      {accessories
+     .filter((a) =>
+     a.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+   )
+      .map((a) => (
         <AccessoriesItem item={a} setToCart={setToCart} />
       ))}
     </div>

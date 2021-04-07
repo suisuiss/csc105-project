@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import "./shop.css";
-import bell from "./bell.png";
-import shopcart from "./shop cart.png";
-
-import user from "./user.png";
-import { Product } from "../Product/Product";
-import fire from "../../config/fire";
+import "../shop.css";
+import bell from "../bell.png";
+import shopcart from "../shop cart.png";
+import user from "../user.png";
+import fire from "../../../config/fire";
+import { Menclothes } from "./Menclothes";
 
 const notifications = [
   {
@@ -65,7 +64,7 @@ const NotificationItem = ({ image, description }, index) => {
   );
 };
 
-const Shop = (props) => {
+export const MenClothesShop = (props) => {
   const { cart, setToCart } = props;
   const [isShowNotification, setIsShowNotification] = useState(false);
   const [isOpenUser, setIsOpenUser] = useState(false);
@@ -167,11 +166,10 @@ const Shop = (props) => {
           </div>
         </div>
         <div style={{ flex: "1" }}>
-          <Product search={search} setToCart={setToCart} />
+          <Menclothes search={search} setToCart={setToCart} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Shop;
