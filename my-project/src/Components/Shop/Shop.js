@@ -132,7 +132,9 @@ const Shop = (props) => {
               />
               {isOpenUser ? (
                 <div className="user-modal">
-                  <button onClick={logout}>Logout</button>
+                  <button onClick><a href="/addproduct">Add Product</a></button>
+                  <button onClick={logout} >Logout</button>
+                  
                 </div>
               ) : (
                 <div></div>

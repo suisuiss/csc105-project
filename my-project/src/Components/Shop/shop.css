@@ -165,6 +165,14 @@
   border-radius: 10px;
   animation: fadeIn ease 0.5s;
 }
+.user-modal>button{
+  width: 2.5cm;
+}
+.user-modal>button>a
+{
+  text-decoration: none;
+  color: black;
+}
 
 .user-modal::after {
   content: "";
