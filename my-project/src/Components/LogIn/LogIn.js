@@ -54,7 +54,7 @@ function LogIn() {
           type="text"
           id="email-login"
           name="username"
-          placeholder="username"
+          placeholder="username or email"
           required
         />
         <input
