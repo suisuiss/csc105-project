@@ -99,8 +99,7 @@ input[id="email"] {
   margin-top: 9.5cm;
   border-radius: 7px;
 }
-
-input[id="password"] {
+input[id="username"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -113,7 +112,7 @@ input[id="password"] {
   border-radius: 7px;
 }
 
-input[id="confirm-password"] {
+input[id="password"] {
   font-size: 16px;
   display: block;
   padding-left: 0.2cm;
@@ -126,6 +125,19 @@ input[id="confirm-password"] {
   border-radius: 7px;
 }
 
+input[id="confirm-password"] {
+  font-size: 16px;
+  display: block;
+  padding-left: 0.2cm;
+  height: 1.2cm;
+  width: 10cm;
+  border: none;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 14.6cm;
+  border-radius: 7px;
+}
+
 .signup-button {
   font-size: 16px;
   display: block;
@@ -135,7 +147,7 @@ input[id="confirm-password"] {
   border: none;
   position: absolute;
   margin-left: 7%;
-  margin-top: 15.5cm;
+  margin-top: 16.3cm;
   border-radius: 7px;
   background-color: rgb(255, 160, 122);
   color: white;
@@ -151,7 +163,7 @@ input[id="confirm-password"] {
   border: none;
   position: absolute;
   margin-left: 7%;
-  margin-top: 15.5cm;
+  margin-top: 16.5cm;
   border-radius: 7px;
   background-color: rgb(180, 180, 180);
   color: white;

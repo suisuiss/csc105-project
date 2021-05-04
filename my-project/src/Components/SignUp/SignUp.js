@@ -101,6 +101,13 @@ const SignUp = () => {
         />
         <input
           type="text"
+          placeholder="Username"
+          id="username"
+          onChange={(e) => inputChanged("username", e.target.value)}
+          required
+        />
+        <input
+          type="text"
           placeholder="Phone No."
           id="phone"
           onChange={(e) => inputChanged("phoneno", e.target.value)}
