@@ -108,6 +108,7 @@ const Shop = (props) => {
                 <div></div>
               ) : (
                 <div className="count-cart-item">{cart.length}</div>
+
               )}
             </div>
             <div className="bell-container">
@@ -132,8 +133,12 @@ const Shop = (props) => {
               />
               {isOpenUser ? (
                 <div className="user-modal">
+                  <button onClick>My Products</button>
+                  <button onClick><a href="/myInfo">My Info</a></button>
                   <button onClick><a href="/addproduct">Add Product</a></button>
-                  <button onClick={logout} >Logout</button>
+                  
+                  <button onClick><a href="/addproduct">My History</a></button>
+                  <button onClick={logout} >Log out</button>
                   
                 </div>
               ) : (

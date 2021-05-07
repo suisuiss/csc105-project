@@ -145,7 +145,7 @@ export default () => {
           </div>
 
           <div>
-            <span className="formFont">Detial</span>
+            <span className="formFont">Detail</span>
           </div>
           <div>
             <input

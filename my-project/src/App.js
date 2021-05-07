@@ -10,8 +10,11 @@ import { GadgetsShop } from "./Components/Shop/Gadgets/GadgetsShop";
 import { SnacksShop } from "./Components/Shop/Snacks/SnacksShop";
 import Details from "./Components/Details/Details";
 
+
 import Cart from "./Components/Cart/Cart";
 import AddProduct from "./Components/AddProduct/AddProduct";
+import EditInfo from "./Update/EditInfo";
+import { MyInfo } from "./Components/MyInfo/MyInfo";
 
 class App extends Component {
   constructor(props) {
@@ -43,6 +46,8 @@ class App extends Component {
       <div>
         <Route exact path="/" component={LogIn} />
         <Route exact path="/addproduct" component={AddProduct} />
+        <Route exact path="/editInfo" component={EditInfo}/>
+        <Route exact path="/myInfo" component={MyInfo}/>
         <Route
           path="/shop"
           render={(props) => <Shop cart={cart} setToCart={this.setToCart} />}
