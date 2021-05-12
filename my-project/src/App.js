@@ -3,18 +3,16 @@ import LogIn from "./Components/LogIn/LogIn";
 import Shop from "./Components/Shop/Shop";
 import SignUp from "./Components/SignUp/SignUp";
 import { Route } from "react-router-dom";
-import { MenClothesShop } from "./Components/Shop/Menclothes/MenClothesShop";
-import { WomenClothesShop } from "./Components/Shop/WomenClothes/WomenClothesShop";
-import { AccessoriesShop } from "./Components/Shop/Accessories/AccessoriesShop";
-import { GadgetsShop } from "./Components/Shop/Gadgets/GadgetsShop";
-import { SnacksShop } from "./Components/Shop/Snacks/SnacksShop";
 import Details from "./Components/Details/Details";
 
 
 import Cart from "./Components/Cart/Cart";
 import AddProduct from "./Components/AddProduct/AddProduct";
 import EditInfo from "./Update/EditInfo";
-import { MyInfo } from "./Components/MyInfo/MyInfo";
+import MyInfo  from "./Components/MyInfo/MyInfo";
+import History  from "./Components/History/History";
+import MyProduct  from "./Components/MyProduct/MyProduct";
+
 
 class App extends Component {
   constructor(props) {
@@ -25,19 +23,57 @@ class App extends Component {
     this.setToCart = this.setToCart.bind(this);
     this.clearCart = this.clearCart.bind(this);
   }
+  
 
-  setToCart({ id, image, price, description }) {
+  setToCart({ productId, productPics, productPrice, productDescription }) {
+    var buyerId = localStorage.getItem('userId');
     this.setState({
-      cart: [...this.state.cart, { id, image, price, description }],
+      cart: [...this.state.cart, { productId, productPics, productPrice, productDescription, buyerId }],
     });
     const allEntries = JSON.parse(localStorage.getItem("cart")) || [];
-    allEntries.push({ id, image, price, description });
+    allEntries.push({ productId, productPics, productPrice, productDescription, buyerId });
     localStorage.setItem("cart", JSON.stringify(allEntries));
   }
 
-  clearCart() {
+  DeleteProduct(productId){
+    var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      
+      var raw = JSON.stringify({productID:productId});
+      console.log(raw);
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+      
+      fetch("/csc105_backend_war_exploded/product/delete",requestOptions)
+      .then(response => response.json())
+    .then(result => (result)?window.location.assign("/myProduct"):console.log(result))
+    .catch(error => console.log('error', error));
+  }
+
+  clearCart(cart) {
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      
+      var raw = JSON.stringify(cart);
+      
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+      
+      fetch("/csc105_backend_war_exploded/product/transaction",requestOptions)
+      .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
     localStorage.removeItem("cart");
-    window.location.assign("/shop");
+    window.location.assign("/shop/product");
   }
 
   render() {
@@ -48,30 +84,16 @@ class App extends Component {
         <Route exact path="/addproduct" component={AddProduct} />
         <Route exact path="/editInfo" component={EditInfo}/>
         <Route exact path="/myInfo" component={MyInfo}/>
+        <Route exact path="/history" component={History}/>
+        <Route path="/myProduct" render={(props) => <MyProduct cart={cart} DeleteProduct={this.DeleteProduct} />}/>        
+
+        
         <Route
-          path="/shop"
+          path="/shop/:category"
           render={(props) => <Shop cart={cart} setToCart={this.setToCart} />}
         />
         <Route path="/details/:category/:id" component={Details} />
         <Route path="/signup" component={SignUp} />
-        <Route
-          path="/menclothes"
-          render={(props) => (
-            <MenClothesShop cart={cart} setToCart={this.setToCart} />
-          )}
-        />
-        <Route path="/womenclothes" render={(props) => (
-          <WomenClothesShop cart={cart} setToCart={this.setToCart} />
-        )} />
-        <Route path="/accessories" render={(props) => (
-          <AccessoriesShop cart={cart} setToCart={this.setToCart} />
-        )} />
-        <Route path="/gadgets" render={(props) => (
-          <GadgetsShop cart={cart} setToCart={this.setToCart} />
-        )} />
-        <Route path="/snacks" render={(props) => (
-          <SnacksShop cart={cart} setToCart={this.setToCart} />
-        )} />
        
         <Route
           path="/cart"

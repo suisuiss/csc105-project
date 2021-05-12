@@ -1,15 +1,14 @@
 import React from "react";
 import "./Product.css";
-import products from "../../Products.json";
 
 const ProductItem = ({ product, setToCart }) => {
-  const { id, name, image, price, description } = product;
+  const { productId, productName, productPics, productPrice, productDescription } = product;
   return (
-    <div key={id} id={id} className="product-item">
-      <img src={image} alt={name} />
+    <div key={productId} id={productId} className="product-item">
+      <img src={productPics} alt={productPics} />
       <div className="product-item-detail">
         <h2>
-          {name}
+          {productName}
           <span
             style={{
               fontWeight: "bold",
@@ -17,11 +16,11 @@ const ProductItem = ({ product, setToCart }) => {
               marginLeft: "1rem",
             }}
           >
-            {price} Baht
+            {productPrice} Baht
           </span>
         </h2>
-        <pre>{description}</pre>
-        <a href={`/details/products/${id}`} id={id}>
+        <pre>{productDescription}</pre>
+        <a href={`/details/products/${productId}`} id={productId}>
           see more details
         </a>
       </div>
@@ -36,19 +35,66 @@ const ProductItem = ({ product, setToCart }) => {
   );
 };
 
-export const Product = (props) => {
-  const { search, setToCart } = props;
-  return (
-    <div className="product-container">
-      <h1 id="recommend">Recommended Product</h1>
-      {products
-        .filter((product) =>
-          product.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
-        )
-        .map((product) => (
-          <ProductItem product={product} setToCart={setToCart} />
-        ))}
+class Product extends React.Component  {
 
-    </div>
-  );
+  constructor(props) {
+    super(props);
+    this.state = {products:[],props:props,search:''};
+    this.changeSearch = this.changeSearch.bind(this);
+  }
+
+  componentDidMount() {
+    const { category } = this.state.props;
+    if(category === 'product'){
+      fetch("/csc105_backend_war_exploded/product/list")
+        .then(response => response.json())
+      .then(result => this.setState({products:result}) )
+      .catch(error => console.log('error', error));
+    }else{
+      fetch("/csc105_backend_war_exploded/product/filter?productCategory="+category)
+        .then(response => response.json())
+      .then(result => this.setState({products:result}) )
+      .catch(error => console.log('error', error));
+    }
+    
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.search !== this.state.search) {
+      if(this.state.search.length > 3){
+        fetch("/csc105_backend_war_exploded/product/search?searchTxt="+this.state.search)
+        .then(response => response.json())
+        .then(result => this.setState({products:(null!=result?result:[])}) )
+        .catch(error => console.log('error', error));
+      }
+    }
+  }
+
+  changeSearch(e){
+      this.setState({search:e.target.value});
+  }
+
+  clearSearch(){
+    window.location.href=("/shop/product")
+  }
+
+  render() {
+    const { setToCart } = this.state.props;
+    return (
+      
+      <div className="product-container">
+        <h1 id="recommend">Product <input className="search" id="search"
+              type="search"
+              value={this.state.search}
+              placeholder="What do you want to get?"
+              onChange={this.changeSearch}
+             
+            /> <button onClick={() => this.clearSearch()}>Clear</button></h1>
+        {null != this.state.products && this.state.products.length > 0 ? (this.state.products.map((product) => (<ProductItem product={product} setToCart={setToCart} />))):"Not found"}
+
+      </div>
+    );
+  }
 };
+
+export default Product;

@@ -40,3 +40,19 @@
   border: 0px;
   padding: 10px;
 }
+.container > .header > div > .search {
+  flex: 1;
+}
+
+#search {
+  height: 100%;
+  width:60%;
+  background-color: blanchedalmond;
+  margin-left:340px;
+  border: none;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  align-items: center;
+}

@@ -1,70 +1,82 @@
-import React, { useState } from "react";
-import "./signup.css";
-import fire from "../../config/fire";
+import React,{ } from 'react';
+import './signup.css';
 
-const SignUp = () => {
-  const [user, setUser] = useState({
-    name: "",
-    surname: "",
-    address: "",
-    phoneno: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-    isValid: false,
-  });
+class SignUp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {firstname: '', lastname: '',address:'',phoneNumber:'',email:'',username:'',password:'',confirmPassword:'',errorMsg:''};
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-  const [errorMsg, setErrorMsg] = useState("");
+ handleChange(event) {
+    switch(event.target.id) {
+    case 'firstname': 
+      this.setState({firstname: event.target.value});
+      break;
+    case 'lastname': 
+      this.setState({lastname: event.target.value});
+      break;
+    case 'address': 
+      this.setState({address: event.target.value});
+      break;
+    case 'phoneNumber': 
+      this.setState({phoneNumber: event.target.value});
+      break;
+    case 'email': 
+      this.setState({email: event.target.value});
+      break;
+    case 'username': 
+      this.setState({username: event.target.value});
+      break;
+    case 'password': 
+      this.setState({password: event.target.value});
+      break;
+    case 'confirmPassword': 
+      this.setState({confirmPassword: event.target.value});
+      break;
+    default:
+      break;
+  }
 
-  const inputChanged = (type, value) => {
-    setUser((prev) => {
-      return {
-        ...prev,
-        [type]: value,
-      };
-    });
-  };
+ }
 
-  const isValidInformation = () => {
-    const {
-      name,
-      surname,
-      address,
-      phoneno,
-      email,
-      password,
-      confirmPassword,
-    } = user;
-
+ isValidInformation () {
     return (
-      !!name.length &&
-      !!surname.length &&
-      !!address.length &&
-      !!phoneno.length &&
-      !!email.length &&
-      !!password.length &&
-      !!confirmPassword.length &&
-      password === confirmPassword
+      this.state.firstname.length > 0 &&
+      this.state.lastname.length > 0 &&
+      this.state.address.length > 0 &&
+      this.state.phoneNumber.length > 0 &&
+      this.state.email.length > 0 &&
+      this.state.username.length > 0 &&
+      this.state.password.length > 0 &&
+      this.state.confirmPassword.length > 0 &&
+      this.state.password === this.state.confirmPassword
     );
   };
 
-  const signUpClicked = () => {
-    const { email, password } = user;
-
-    fire
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((resp) => {
-        console.log(resp);
-        window.location.assign("/");
-      })
-      .catch((err) => {
-        setErrorMsg(err.message);
-      });
+  signUpClicked(){
+    
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      
+      var raw = JSON.stringify(this.state);
+      
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+      
+      fetch("/csc105_backend_war_exploded/signup",requestOptions)
+      .then(response => response.json())
+    .then(result => console.log(result),window.location.href="/login")
+    .catch(error => console.log('error', error));
+  
   };
 
-  return (
-    <div>
+  render() {
+    return <div>
       <div className="logo">
         Daily Deal
         <p>your best shopping centre</p>
@@ -75,64 +87,64 @@ const SignUp = () => {
           type="text"
           placeholder="Name"
           id="name"
-          onChange={(e) => inputChanged("name", e.target.value)}
+          onChange={this.handleChange}
           required
         />
         <input
           type="text"
-          placeholder="Surname"
+          placeholder="surname"
           id="surname"
-          onChange={(e) => inputChanged("surname", e.target.value)}
+          onChange={this.handleChange}
           required
         />
         <input
           type="text"
           placeholder="Address"
           id="address"
-          onChange={(e) => inputChanged("address", e.target.value)}
+          onChange={this.handleChange}
           required
         />
         <input
           type="text"
           placeholder="Email"
           id="email"
-          onChange={(e) => inputChanged("email", e.target.value)}
+          onChange={this.handleChange}
           required
         />
-        <input
-          type="text"
-          placeholder="Username"
-          id="username"
-          onChange={(e) => inputChanged("username", e.target.value)}
-          required
-        />
+        
         <input
           type="text"
           placeholder="Phone No."
           id="phone"
-          onChange={(e) => inputChanged("phoneno", e.target.value)}
+          onChange={this.handleChange}
+          required
+        /><input
+          type="text"
+          placeholder="Username"
+          id="username"
+          onChange={this.handleChange}
           required
         />
         <input
           type="password"
           placeholder="Password"
           id="password"
-          onChange={(e) => inputChanged("password", e.target.value)}
+          onChange={this.handleChange}
           required
         />
         <input
           type="password"
           placeholder="Confirm - Password"
           id="confirm-password"
-          onChange={(e) => inputChanged("confirmPassword", e.target.value)}
+          onChange={this.handleChange}
           required
         />
-        {isValidInformation() ? (
+          {this.isValidInformation() ? (
           <div>
-            <button className="signup-button" onClick={() => signUpClicked()}>
+            <button className="signup-button" onClick={() => { this.signUpClicked() }}>
               Sign Up
             </button>
-            <span className="error-msg">{errorMsg}</span>
+            <span className="error-msg">{this.state.errorMsg}</span>
           </div>
         ) : (
           <div>
@@ -141,7 +153,6 @@ const SignUp = () => {
         )}
       </div>
     </div>
-  );
-};
-
+  }
+}
 export default SignUp;

@@ -1,43 +1,35 @@
 import React, { useState } from "react";
 import "./logIn.css";
-import fire from "../../config/fire";
 
-fire.auth().onAuthStateChanged((user) => {
-  if (user) {
-    if (
-      window.location.pathname === "/" ||
-      window.location.pathname === "/signup"
-    ) {
-      window.location.assign("/shop");
-    }
-  } else {
-    if (
-      window.location.pathname !== "/" &&
-      window.location.pathname !== "/signup"
-    ) {
-      window.location.assign("/");
-    }
-  }
-});
+
 
 function LogIn() {
   const [errorMsg, setErrorMsg] = useState("");
 
   const signIn = () => {
-    const email = document.getElementById("email-login").value;
+    const username = document.getElementById("username-login").value;
     const password = document.getElementById("password-login").value;
-
-    fire
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((resp) => {
-        console.log(resp);
-        window.location.assign("/shop");
-      })
-      .catch((err) => {
-        console.log(`Error: ${err}`);
-        setErrorMsg(err.message);
-      });
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Cookie", "JSESSIONID=E63C09469D7E953EE19AC2030257601B");
+    
+    var raw = JSON.stringify({
+      "username": username,
+      "password": password
+    });
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch("/csc105_backend_war_exploded/login", requestOptions)
+      .then(res => res.json())
+      .then(data => localStorage.setItem('userId',data),window.location.href=("/shop/product"))
+      .catch(error => console.log('error', error));
+    
   };
 
   return (
@@ -52,9 +44,9 @@ function LogIn() {
         <p>Log In</p>
         <input
           type="text"
-          id="email-login"
+          id="username-login"
           name="username"
-          placeholder="username or email"
+          placeholder="username"
           required
         />
         <input

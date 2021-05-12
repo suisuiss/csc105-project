@@ -39,7 +39,7 @@ html {
   margin-left: 7%;
   margin-top: 2.7cm;
   }
-  .name>#name{
+  .name>#firstname{
     font-size: 16px;
     display:inline-block;
     padding-left: 0.5cm;
@@ -59,7 +59,7 @@ html {
   margin-left: 7%;
   margin-top: 4.3cm;
   }
-  .surname>#surname{
+  .surname>#lastname{
     font-size: 16px;
     display:inline-block;
     padding-left: 0.5cm;
@@ -99,7 +99,7 @@ html {
   margin-left:-10%;
   margin-top: 2.5cm;
   }
-  .phoneNo>#phoneNo{
+  .phoneNo>#phoneNumber{
     font-size: 16px;
     display:inline-block;
     padding-left: 0.5cm;
@@ -141,7 +141,7 @@ html {
     border: none;
     position: absolute;
     margin-left: -5%;
-    margin-top: 6cm;
+    margin-top: 5.5cm;
     border-radius: 7px;
     background-color: rgb(255, 160, 122);
     color: white;

@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./shop.css";
 import bell from "./bell.png";
 import shopcart from "./shop cart.png";
+import Menu from "./Menu";
 
 import user from "./user.png";
-import { Product } from "../Product/Product";
+import Product from "../Product/Product";
 import fire from "../../config/fire";
+
+import { useParams } from 'react-router-dom';
 
 const notifications = [
   {
@@ -70,7 +73,7 @@ const Shop = (props) => {
   const [isShowNotification, setIsShowNotification] = useState(false);
   const [isOpenUser, setIsOpenUser] = useState(false);
   const [search, setSearch] = useState("");
-
+  const { category } = useParams();
   const logout = () => {
     fire
       .auth()
@@ -93,11 +96,7 @@ const Shop = (props) => {
         </div>
         <div style={{ flex: "1", display: "flex", flexDirection: "row" }}>
           <div className="search">
-            <input
-              type="search"
-              placeholder="What do you want to get?"
-              onChange={(e) => setSearch(e.target.value)}
-            />
+            
           </div>
           <div className="button-container">
             <div className="cart-container">
@@ -133,11 +132,11 @@ const Shop = (props) => {
               />
               {isOpenUser ? (
                 <div className="user-modal">
-                  <button onClick>My Products</button>
+                  <button onClick><a href="/myProduct">My Products</a></button>
                   <button onClick><a href="/myInfo">My Info</a></button>
                   <button onClick><a href="/addproduct">Add Product</a></button>
                   
-                  <button onClick><a href="/addproduct">My History</a></button>
+                  <button onClick><a href="/history">My History</a></button>
                   <button onClick={logout} >Log out</button>
                   
                 </div>
@@ -150,31 +149,9 @@ const Shop = (props) => {
       </div>
 
       <div className="content">
-        <div className="categories">
-          <h2>Your Options</h2>
-          <div className="cat-list">
-          <a className="" href="./shop">
-              Recommend Product
-            </a>
-            <a className="" href="./menclothes">
-              Men Clothes
-            </a>
-            <a className="" href="./womenclothes">
-              Women Clothes
-            </a>
-            <a className="" href="./accessories">
-              Accessories
-            </a>
-            <a className="" href="./gadgets">
-              Gadgets
-            </a>
-            <a className="" href="./snacks">
-              Snack
-            </a>
-          </div>
-        </div>
+        <Menu />
         <div style={{ flex: "1" }}>
-          <Product search={search} setToCart={setToCart} />
+          <Product search={search} setToCart={setToCart} category={category} />
         </div>
       </div>
     </div>

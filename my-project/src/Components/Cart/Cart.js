@@ -1,14 +1,27 @@
 import React from "react";
 import "./Cart.css";
+import { Confirm } from 'react-st-modal';
 
-const Summary = ({ totalPrice, clearCart }) => {
+const onClick = async (cart,clearCart) => {
+  const isConfirm = await Confirm(
+    'Are you sure you want to pay this item?'
+  );
+
+  if (isConfirm) {
+    clearCart(cart);
+  }
+};
+
+
+const Summary = ({ totalPrice, clearCart,cart }) => {
+  
   return (
     <div className="page-summary-container">
       <div className="page-summary-details">
         <h1>Total</h1>
         <span style={{ alignSelf: "center" }}>{totalPrice} THB</span>
       </div>
-      <button onClick={() => clearCart()} className="page-summary-pay-button">
+      <button onClick={() => onClick(cart,clearCart)} className="page-summary-pay-button">
         PAY
       </button>
     </div>
@@ -16,29 +29,28 @@ const Summary = ({ totalPrice, clearCart }) => {
 };
 
 const CartItem = ({ cart, index }) => {
-  const { id, name, image, price, description } = cart;
+  const { productId, productName, productPics, productPrice, productDescription } = cart;
   return (
-    <tr key={`${id}-${index}`}>
+    <tr key={`${productId}-${index}`}>
       <td>
-        <img className="page-cart-item-image" src={image} alt={name} />
+        <img className="page-cart-item-image" src={productPics} alt={productName} />
       </td>
       <td style={{ padding: "3rem 0", textAlign: "center" }}>
-        <span className="page-cart-item-name">{id}</span>
+        <span className="page-cart-item-name">{productId}</span>
       </td>
       <td className="page-cart-item-details">
         <div>
-          <span>{description}</span>
+          <span>{productDescription}</span>
         </div>
       </td>
       <td style={{ textAlign: "right" }}>1</td>
-      <td style={{ textAlign: "right" }}>{price} THB</td>
+      <td style={{ textAlign: "right" }}>{productPrice} THB</td>
     </tr>
   );
 };
 
 const Cart = ({ cart, clearCart }) => {
-  const totalPrice = cart.map((c) => +c.price).reduce((a, b) => a + b, 0);
-
+  const totalPrice = cart.map((c) => +c.productPrice).reduce((a, b) => a + b, 0);
   return (
     <div>
       {cart.length === 0 ? (
@@ -52,7 +64,7 @@ const Cart = ({ cart, clearCart }) => {
         >
           <h1 style={{ fontSize: "2.5rem" }}>Your shopping cart is EMPTY!</h1>
           <span>Let's add something in your shopping cart.</span>
-          <a style={{ display: "block" }} href="/shop">
+          <a style={{ display: "block" }} href="/shop/product">
             Back
           </a>
         </div>
@@ -73,7 +85,7 @@ const Cart = ({ cart, clearCart }) => {
                 cart.map((c, index) => <CartItem cart={c} index={index} />)}
             </tbody>
           </table>
-          <Summary totalPrice={totalPrice} clearCart={clearCart} />
+          <Summary totalPrice={totalPrice} clearCart={clearCart} cart={cart}/>
         </div>
       )}
     </div>

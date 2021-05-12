@@ -24,7 +24,7 @@ export default class AddImage extends React.Component {
         imagePreviewUrl: reader.result,
       });
     };
-
+    this.props.onImageUploadChange(e);
     reader.readAsDataURL(file);
   }
 
@@ -48,13 +48,7 @@ export default class AddImage extends React.Component {
             required
             onChange={(e) => this._handleImageChange(e)}
           />
-          <button
-            className="submitButton"
-            type="submit"
-            // onClick={(e) => this._handleSubmit(e)}
-          >
-            Upload Image
-          </button>
+          
         </form>
         <p className = "errorMsg">{this.state.file == "" ? this.props.errorMsgPic : null}</p>
         <div className="imgPreview">{$imagePreview}</div>
