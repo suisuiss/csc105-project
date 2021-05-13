@@ -37,7 +37,7 @@ class History extends React.Component  {
 
   componentDidMount() {
 
-      fetch("/csc105_backend_war_exploded/history?userID="+localStorage.getItem('userId'))
+      fetch("/csc105_backend_war_exploded/history?userID="+sessionStorage.getItem('userId'))
         .then(response => response.json())
       .then(result => this.setState({products:result}) )
       .catch(error => console.log('error', error));

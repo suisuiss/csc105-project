@@ -75,6 +75,7 @@ const Shop = (props) => {
   const [search, setSearch] = useState("");
   const { category } = useParams();
   const logout = () => {
+    localStorage.removeItem("cart");
     sessionStorage.setItem('userId','');
     window.location.assign("/");
   };

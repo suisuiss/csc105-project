@@ -14,6 +14,9 @@
   width: 5rem;
   height: 5rem;
   object-fit: cover;
+  position: absolute;
+  margin-left: 0.2cm;
+  margin-top: -1cm;
 }
 
 .page-cart-item-name {
@@ -38,6 +41,7 @@
 .page-summary-details>span {
   font-size: 25px;
   font-weight: bold;
+
 }
 
 .page-summary-pay-button {

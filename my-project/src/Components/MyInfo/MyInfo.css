@@ -141,7 +141,7 @@ html {
     border: none;
     position: absolute;
     margin-left: -5%;
-    margin-top: 6cm;
+    margin-top: 5.5cm;
     border-radius: 7px;
     background-color: rgb(255, 160, 122);
     color: white;
@@ -154,3 +154,23 @@ html {
       font-weight: bold;
   }
   
+  #back{
+    font-size: 16px;
+    display: block;
+    padding-left: 0.2cm;
+    height: 1cm;
+    width: 10.25cm;
+    border: none;
+    position: absolute;
+    margin-left: 61.5%;
+    margin-top: 3.5cm;
+    border-radius: 7px;
+    background-color: rgb(255, 160, 122);
+    
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #back>a{
+     text-decoration: none;
+     color: white;
+  }

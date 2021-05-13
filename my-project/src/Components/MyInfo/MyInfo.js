@@ -80,10 +80,12 @@ class MyInfo extends React.Component  {
               <input type="text" id="email" value={this.state.email} onChange={this.handleChange} disabled="disabled" />
               </div>
               <button id="editInfo"><a href="/editInfo">Edit Info</a></button>
+              
           </div>
         </div>
+        </div><button id="back"><a href="/shop/product">back</a></button>
         </div>
-        </div>
+        
     )
   }
 }

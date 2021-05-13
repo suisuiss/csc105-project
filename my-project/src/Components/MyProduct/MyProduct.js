@@ -55,7 +55,7 @@ class MyProduct extends React.Component  {
 
   componentDidMount() {
 
-      fetch("/csc105_backend_war_exploded/myProduct?userID="+localStorage.getItem('userId'))
+      fetch("/csc105_backend_war_exploded/myProduct?userID="+sessionStorage.getItem('userId'))
         .then(response => response.json())
       .then(result => this.setState({products:result}),console.log(this.state.products) )
       .catch(error => console.log('error', error));

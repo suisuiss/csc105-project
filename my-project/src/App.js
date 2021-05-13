@@ -26,7 +26,7 @@ class App extends Component {
   
 
   setToCart({ productId, productPics, productPrice, productDescription }) {
-    var buyerId = localStorage.getItem('userId');
+    var buyerId = sessionStorage.getItem('userId');
     this.setState({
       cart: [...this.state.cart, { productId, productPics, productPrice, productDescription, buyerId }],
     });

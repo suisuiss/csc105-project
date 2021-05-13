@@ -4,7 +4,7 @@ class EditInfo extends React.Component  {
   
     constructor(props) {
     super(props);
-    this.state = {  userId:localStorage.getItem('userId'),
+    this.state = {  userId:sessionStorage.getItem('userId'),
                     email:'',
                     firstname:'',
                     lastname:'',
