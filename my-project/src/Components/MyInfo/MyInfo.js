@@ -3,7 +3,7 @@ import "./MyInfo.css";
 class MyInfo extends React.Component  {
     constructor(props) {
     super(props);
-    this.state = {userID:localStorage.getItem('userId'),
+    this.state = {userID:sessionStorage.getItem('userId'),
                     email:'',
                     firstname:'',
                     lastname:'',

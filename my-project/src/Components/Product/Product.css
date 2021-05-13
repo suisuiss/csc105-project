@@ -45,14 +45,33 @@
 }
 
 #search {
-  height: 100%;
-  width:60%;
+  height: 1cm;
+  width:48.5%;
   background-color: blanchedalmond;
   margin-left:340px;
   border: none;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
-  padding: 0 0.5rem;
+  padding-top:0.7cm ;
+  padding-bottom: 0.7cm;
+  padding-left: 0.5cm;
   align-items: center;
+ position: absolute;
+  margin-left:-8.5%;
+ margin-top: -2.5cm;
+
+}
+.product-container>h1>button{
+  background-color: #F1D792;
+  border-radius: 5px;
+  border: 0px;
+  padding-top: 0.5cm;
+  padding-bottom: 0.5cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  display: inline-block;
+  position: absolute;
+  margin-top: -2.5cm;
+  margin-left: 40%;
 }

@@ -6,7 +6,7 @@ import "./logIn.css";
 function LogIn() {
   const [errorMsg, setErrorMsg] = useState("");
 
-  const signIn = () => {
+  const signIn = async () => {
     const username = document.getElementById("username-login").value;
     const password = document.getElementById("password-login").value;
     var myHeaders = new Headers();
@@ -25,10 +25,15 @@ function LogIn() {
       redirect: 'follow'
     };
     
-    fetch("/csc105_backend_war_exploded/login", requestOptions)
-      .then(res => res.json())
-      .then(data => localStorage.setItem('userId',data),window.location.href=("/shop/product"))
-      .catch(error => console.log('error', error));
+    const response = await fetch("/csc105_backend_war_exploded/login", requestOptions);
+    const data = await  response.json();
+    if(typeof data !== 'undefined' && data.errorCode !== '400'){
+      sessionStorage.setItem('userId',data);
+      window.location.href=("/shop/product")
+    }else{
+      sessionStorage.setItem('userId','');
+      alert('Invalid user or password');
+    }
     
   };
 

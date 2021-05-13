@@ -55,7 +55,7 @@ class SignUp extends React.Component {
   };
 
   signUpClicked(){
-    
+      
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
       
@@ -70,7 +70,7 @@ class SignUp extends React.Component {
       
       fetch("/csc105_backend_war_exploded/signup",requestOptions)
       .then(response => response.json())
-    .then(result => console.log(result),window.location.href="/login")
+    .then(result => result?window.location.href="/":"")
     .catch(error => console.log('error', error));
   
   };
@@ -86,14 +86,16 @@ class SignUp extends React.Component {
         <input
           type="text"
           placeholder="Name"
-          id="name"
+          id="firstname"
+          value={this.state.firstname}
           onChange={this.handleChange}
           required
         />
         <input
           type="text"
           placeholder="surname"
-          id="surname"
+          id="lastname"
+          value={this.state.lastname}
           onChange={this.handleChange}
           required
         />
@@ -101,6 +103,7 @@ class SignUp extends React.Component {
           type="text"
           placeholder="Address"
           id="address"
+          value={this.state.address}
           onChange={this.handleChange}
           required
         />
@@ -108,6 +111,7 @@ class SignUp extends React.Component {
           type="text"
           placeholder="Email"
           id="email"
+          value={this.state.email}
           onChange={this.handleChange}
           required
         />
@@ -115,13 +119,15 @@ class SignUp extends React.Component {
         <input
           type="text"
           placeholder="Phone No."
-          id="phone"
+          id="phoneNumber"
+          value={this.state.phoneNumber}
           onChange={this.handleChange}
           required
         /><input
           type="text"
           placeholder="Username"
           id="username"
+          value={this.state.username}
           onChange={this.handleChange}
           required
         />
@@ -129,20 +135,22 @@ class SignUp extends React.Component {
           type="password"
           placeholder="Password"
           id="password"
+          value={this.state.password}
           onChange={this.handleChange}
           required
         />
         <input
           type="password"
           placeholder="Confirm - Password"
-          id="confirm-password"
+          id="confirmPassword"
+          value={this.state.confirmPassword}
           onChange={this.handleChange}
           required
         />
           {this.isValidInformation() ? (
           <div>
             <button className="signup-button" onClick={() => { this.signUpClicked() }}>
-              Sign Up
+              Sign Up 
             </button>
             <span className="error-msg">{this.state.errorMsg}</span>
           </div>

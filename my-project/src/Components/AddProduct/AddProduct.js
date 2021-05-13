@@ -10,7 +10,7 @@ import { Confirm } from 'react-st-modal';
 class AddProduct extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {productName: '', productPrice: null,productAmount:0,productDetails:'',productDescription:'',productPics:null,productCategory:'',sellerID:localStorage.getItem('userId'),text:'',errorMsgProduct:'',errorMsgPrice:'',errorMsgAmount:'',errorMsgDetial:'',errorMsgDescription:'',errorMsgPic:'',errorMsgCategory:'' };
+    this.state = {productName: '', productPrice: null,productAmount:0,productDetails:'',productDescription:'',productPics:null,productCategory:'',sellerID:sessionStorage.getItem('userId'),text:'',errorMsgProduct:'',errorMsgPrice:'',errorMsgAmount:'',errorMsgDetial:'',errorMsgDescription:'',errorMsgPic:'',errorMsgCategory:'' };
     this.handleChange = this.handleChange.bind(this);
     this.onImageUploadChange = this.onImageUploadChange.bind(this);
     this.onPriceChange = this.onPriceChange.bind(this);

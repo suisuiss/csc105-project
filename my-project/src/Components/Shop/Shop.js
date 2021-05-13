@@ -75,16 +75,8 @@ const Shop = (props) => {
   const [search, setSearch] = useState("");
   const { category } = useParams();
   const logout = () => {
-    fire
-      .auth()
-      .signOut()
-      .then(function () {
-        console.log("Logout!");
-        window.location.assign("/");
-      })
-      .catch(function (err) {
-        console.log(`Signout Error: ${err}`);
-      });
+    sessionStorage.setItem('userId','');
+    window.location.assign("/");
   };
 
   return (

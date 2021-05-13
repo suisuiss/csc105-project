@@ -38,7 +38,6 @@ class App extends Component {
   DeleteProduct(productId){
     var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-      
       var raw = JSON.stringify({productID:productId});
       console.log(raw);
       var requestOptions = {

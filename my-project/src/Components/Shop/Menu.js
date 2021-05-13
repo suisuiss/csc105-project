@@ -21,12 +21,11 @@ class Menu extends React.Component  {
       <div className="categories">
           <h2>Your Options</h2>
           <div className="cat-list">
-            {menu
-          .map((menu) => (
+            {null != menu && menu.length > 0 ? menu.map((menu) => (
             <a className="" href={menu}>
               {menu}
             </a>
-          ))}
+          )):"Menu Not found"}
           </div>
         </div>
     );
